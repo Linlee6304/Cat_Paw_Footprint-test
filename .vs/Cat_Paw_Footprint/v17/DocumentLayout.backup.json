@@ -1,0 +1,104 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\user\\Desktop\\MVC\\test\\Cat_Paw_Footprint\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{CFC03216-5C95-4FC9-B57C-D2B62C0A3FFF}|Cat_Paw_Footprint.csproj|c:\\users\\user\\desktop\\mvc\\test\\cat_paw_footprint\\controllers\\accountcontrollercs.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CFC03216-5C95-4FC9-B57C-D2B62C0A3FFF}|Cat_Paw_Footprint.csproj|solutionrelative:controllers\\accountcontrollercs.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CFC03216-5C95-4FC9-B57C-D2B62C0A3FFF}|Cat_Paw_Footprint.csproj|c:\\users\\user\\desktop\\mvc\\test\\cat_paw_footprint\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CFC03216-5C95-4FC9-B57C-D2B62C0A3FFF}|Cat_Paw_Footprint.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CFC03216-5C95-4FC9-B57C-D2B62C0A3FFF}|Cat_Paw_Footprint.csproj|c:\\users\\user\\desktop\\mvc\\test\\cat_paw_footprint\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{CFC03216-5C95-4FC9-B57C-D2B62C0A3FFF}|Cat_Paw_Footprint.csproj|solutionrelative:appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CFC03216-5C95-4FC9-B57C-D2B62C0A3FFF}|Cat_Paw_Footprint.csproj|c:\\users\\user\\desktop\\mvc\\test\\cat_paw_footprint\\models\\webtravel2context.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CFC03216-5C95-4FC9-B57C-D2B62C0A3FFF}|Cat_Paw_Footprint.csproj|solutionrelative:models\\webtravel2context.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 4,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{75188d03-9892-4ae2-abf1-207126247ce5}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:129:0:{75188d03-9892-4ae2-abf1-207126247ce5}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "AccountControllercs.cs",
+              "DocumentMoniker": "C:\\Users\\user\\Desktop\\MVC\\test\\Cat_Paw_Footprint\\Controllers\\AccountControllercs.cs",
+              "RelativeDocumentMoniker": "Controllers\\AccountControllercs.cs",
+              "ToolTip": "C:\\Users\\user\\Desktop\\MVC\\test\\Cat_Paw_Footprint\\Controllers\\AccountControllercs.cs",
+              "RelativeToolTip": "Controllers\\AccountControllercs.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-02T07:30:25.548Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\user\\Desktop\\MVC\\test\\Cat_Paw_Footprint\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "C:\\Users\\user\\Desktop\\MVC\\test\\Cat_Paw_Footprint\\Program.cs",
+              "RelativeToolTip": "Program.cs",
+              "ViewState": "AgIAABAAAAAAAAAAAAAQwBUAAAApAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-02T07:26:23.273Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\user\\Desktop\\MVC\\test\\Cat_Paw_Footprint\\appsettings.json",
+              "RelativeDocumentMoniker": "appsettings.json",
+              "ToolTip": "C:\\Users\\user\\Desktop\\MVC\\test\\Cat_Paw_Footprint\\appsettings.json",
+              "RelativeToolTip": "appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAABRAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-09-02T07:24:48.25Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "WebTravel2Context.cs",
+              "DocumentMoniker": "C:\\Users\\user\\Desktop\\MVC\\test\\Cat_Paw_Footprint\\Models\\WebTravel2Context.cs",
+              "RelativeDocumentMoniker": "Models\\WebTravel2Context.cs",
+              "ToolTip": "C:\\Users\\user\\Desktop\\MVC\\test\\Cat_Paw_Footprint\\Models\\WebTravel2Context.cs",
+              "RelativeToolTip": "Models\\WebTravel2Context.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAA8AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-02T07:23:21.064Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
