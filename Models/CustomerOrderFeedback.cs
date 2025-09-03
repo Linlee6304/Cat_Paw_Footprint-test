@@ -1,15 +1,17 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
 
 namespace Cat_Paw_Footprint.Models;
 
 public partial class CustomerOrderFeedback
 {
-    public int FeedbackId { get; set; }
+	[Key]
+	public int FeedbackID { get; set; }
 
-    public int? OrderId { get; set; }
+    public int? OrderID { get; set; }
 
-    public int? CustomerId { get; set; }
+    public int? CustomerID { get; set; }
 
     public int? FeedbackRating { get; set; }
 
@@ -17,5 +19,5 @@ public partial class CustomerOrderFeedback
 
     public DateTime? CreateTime { get; set; }
 
-    public virtual CustomerOrder? Order { get; set; }
+    public virtual CustomerOrders? Order { get; set; }
 }

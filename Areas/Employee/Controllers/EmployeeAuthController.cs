@@ -28,6 +28,7 @@ namespace Cat_Paw_Footprint.Areas.Employee.Controllers
 		{
 			System.Diagnostics.Debug.WriteLine("🧪 進入 Login POST");
 			System.Diagnostics.Debug.WriteLine($"帳號:{vm.Account}");
+			System.Diagnostics.Debug.WriteLine($"帳號:{vm.Password}");
 			if (!ModelState.IsValid)
 			{
 				foreach (var kvp in ModelState)
@@ -53,19 +54,20 @@ namespace Cat_Paw_Footprint.Areas.Employee.Controllers
 				return View(vm);
 			}
 
+
 			// ❗ 密碼比對失敗
 			if (!BCrypt.Net.BCrypt.Verify(vm.Password, emp.Password))
 			{
 				vm.ErrorMessage = "密碼錯誤";
 				return View(vm);
 			}
-			var profile = _context.EmployeeProfiles
-			.FirstOrDefault(p => p.EmployeeId == emp.EmployeeId);
+			var profile = _context.EmployeeProfile
+			.FirstOrDefault(p => p.EmployeeID == emp.EmployeeID);
 
 			string empName = profile?.EmployeeName ?? "未填寫";
 
 
-			HttpContext.Session.SetString("EmpId", emp.EmployeeId.ToString());
+			HttpContext.Session.SetString("EmpId", emp.EmployeeID.ToString());
 			HttpContext.Session.SetString("EmpName", empName);
 			return RedirectToAction("Dashboard", "Home");
 		}
@@ -73,31 +75,46 @@ namespace Cat_Paw_Footprint.Areas.Employee.Controllers
 		[HttpGet]
 		public IActionResult Register()
 		{
+			
 			var roles = _context.EmployeeRoles
-				.Select(r => new { r.RoleId, r.RoleName })
+				.Select(r => new { r.RoleID, r.RoleName })
 				.ToList();
 
-			ViewBag.RoleList = new SelectList(roles, "RoleId", "RoleName");
+			ViewBag.RoleList = new SelectList(roles, "RoleID", "RoleName");
 
-			return View();
+			return View(new RegisterViewModel());
+			
 		}
 		[HttpPost]
 		public IActionResult Register(RegisterViewModel model)
 		{
-			if(!ModelState.IsValid)
+			System.Diagnostics.Debug.WriteLine($"帳號:{model.Account}");
+			System.Diagnostics.Debug.WriteLine($"密碼:{model.Password}");
+			System.Diagnostics.Debug.WriteLine($"密碼:{model.EmployeeName}");
+			System.Diagnostics.Debug.WriteLine($"密碼:{model.RoleId}");
+			if (!ModelState.IsValid)
 			{
+				var roles = _context.EmployeeRoles
+			.Select(r => new { r.RoleID, r.RoleName })
+			.ToList();
+				ViewBag.RoleList = new SelectList(roles, "RoleID", "RoleName");
 				return View(model);
 			}
 			if(_context.Employees.Any(e=>e.Account==model.Account))
 			{
+				var roles = _context.EmployeeRoles
+			.Select(r => new { r.RoleID, r.RoleName })
+			.ToList();
+				ViewBag.RoleList = new SelectList(roles, "RoleID", "RoleName");
+
 				model.ErrorMessage="此帳號已被註冊";
 				return View(model);
 			}
-			var emp = new Cat_Paw_Footprint.Models.Employee//註冊員工帳號
+			var emp = new Cat_Paw_Footprint.Models.Employees//註冊員工帳號
 			{
 				Account=model.Account,
 				Password=BCrypt.Net.BCrypt.HashPassword(model.Password),
-				RoleId=model.RoleId,
+				RoleID=model.RoleId,
 				CreateDate=DateTime.Now,
 				Status= true
 			};
@@ -106,11 +123,11 @@ namespace Cat_Paw_Footprint.Areas.Employee.Controllers
 
 			var profile = new EmployeeProfile//註冊之後產生基本員工個資表，剩下給員工自己寫
 			{
-				EmployeeId=emp.EmployeeId,
+				EmployeeID=emp.EmployeeID,
 				EmployeeName=model.EmployeeName,
 			};
 
-			_context.EmployeeProfiles.Add(profile);
+			_context.EmployeeProfile.Add(profile);
 			_context.SaveChanges();
 
 

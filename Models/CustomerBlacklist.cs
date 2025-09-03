@@ -1,13 +1,15 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
 
 namespace Cat_Paw_Footprint.Models;
 
 public partial class CustomerBlacklist
 {
-    public int BlacklistId { get; set; }
+	[Key]
+	public int BlacklistID { get; set; }
 
-    public int? CustomerId { get; set; }
+    public int? CustomerID { get; set; }
 
     public string? Reason { get; set; }
 

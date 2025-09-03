@@ -77,10 +77,6 @@
             "Microsoft.EntityFrameworkCore.Tools": {
               "target": "Package",
               "version": "[8.0.19, )"
-            },
-            "Portable.BouncyCastle": {
-              "target": "Package",
-              "version": "[1.9.0, )"
             }
           },
           "imports": [

@@ -1,17 +1,20 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
 
 namespace Cat_Paw_Footprint.Models;
-
+[Table("EmployeeProfile", Schema = "dbo")]
 public partial class EmployeeProfile
 {
-    public int ProfileId { get; set; }
+	[Key]
+	public int EmployeeProfileID { get; set; }
 
-    public int? EmployeeId { get; set; }
+    public int? EmployeeID { get; set; }
 
     public string? EmployeeName { get; set; }
 
-    public string? Idnumber { get; set; }
+    public string? IDNumber { get; set; }
 
     public string? Phone { get; set; }
 
@@ -21,9 +24,9 @@ public partial class EmployeeProfile
 
     public byte[]? Photo { get; set; }
 
-    public string? ProfileCode { get; set; }
+    public string? EmployeeProfileCode { get; set; }
 
-    public virtual Employee? Employee { get; set; }
+    public virtual Employees? Employee { get; set; }
 
-    public virtual ICollection<NewsTable> NewsTables { get; set; } = new List<NewsTable>();
+    public virtual ICollection<NewsTable> NewsTable { get; set; } = new List<NewsTable>();
 }

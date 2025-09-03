@@ -1,13 +1,15 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
 
 namespace Cat_Paw_Footprint.Models;
 
 public partial class TicketStatus
 {
-    public int StatusId { get; set; }
+	[Key]
+	public int StatusID { get; set; }
 
     public string? StatusDesc { get; set; }
 
-    public virtual ICollection<CustomerSupportTicket> CustomerSupportTickets { get; set; } = new List<CustomerSupportTicket>();
+    public virtual ICollection<CustomerSupportTickets> CustomerSupportTickets { get; set; } = new List<CustomerSupportTickets>();
 }

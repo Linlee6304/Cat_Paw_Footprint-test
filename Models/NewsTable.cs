@@ -1,11 +1,13 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
 
 namespace Cat_Paw_Footprint.Models;
 
 public partial class NewsTable
 {
-    public int NewsId { get; set; }
+	[Key]
+	public int NewsID { get; set; }
 
     public string? NewsTitle { get; set; }
 
@@ -21,7 +23,7 @@ public partial class NewsTable
 
     public DateTime? UpdateTime { get; set; }
 
-    public int? EmployeeId { get; set; }
+    public int? EmployeeID { get; set; }
 
     public virtual EmployeeProfile? Employee { get; set; }
 }

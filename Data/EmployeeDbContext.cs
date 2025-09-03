@@ -2,30 +2,31 @@
 using Microsoft.EntityFrameworkCore;
 namespace Cat_Paw_Footprint.Data
 {
-	public class EmployeeDbContext: DbContext
+	public class EmployeeDbContext : DbContext
 	{
 		public EmployeeDbContext(DbContextOptions<EmployeeDbContext> options)
 			: base(options)
 		{
 		}
-		public DbSet<Models.Employee> Employees { get; set; } 
-		public DbSet<Models.EmployeeRole> EmployeeRoles { get; set; } 
-		public DbSet<Models.EmployeeProfile> EmployeeProfiles { get; set; }
+		public DbSet<Models.Employees> Employees { get; set; }
+		public DbSet<Models.EmployeeRoles> EmployeeRoles { get; set; }
+		public DbSet<Models.EmployeeProfile> EmployeeProfile { get; set; }
 		protected override void OnModelCreating(ModelBuilder modelBuilder)
 		{
-			modelBuilder.Entity<Employee>(entity =>
+			modelBuilder.Entity<Employees>(entity =>
 			{
-				entity.HasKey(e => e.EmployeeId);
+				entity.HasKey(e => e.EmployeeID);
 			});
 
-			modelBuilder.Entity<EmployeeRole>(entity =>
+			modelBuilder.Entity<EmployeeRoles>(entity =>
 			{
-				entity.HasKey(e => e.RoleId);
+				entity.HasKey(e => e.RoleID);
 			});
 			modelBuilder.Entity<EmployeeProfile>(entity =>
 			{
-				entity.HasKey(e => e.ProfileId);
+				entity.HasKey(e => e.EmployeeProfileID);
 			});
+			
 		}
 
 	}

@@ -12,11 +12,11 @@ using System;
 using System.Reflection;
 
 [assembly: Microsoft.AspNetCore.Identity.UI.UIFrameworkAttribute("Bootstrap5")]
-[assembly: Microsoft.Extensions.Configuration.UserSecrets.UserSecretsIdAttribute("aspnet-Cat_Paw_Footprint-c845b621-84b0-4c66-a161-a37e9dc48db2")]
+[assembly: Microsoft.Extensions.Configuration.UserSecrets.UserSecretsIdAttribute("aspnet-Cat_Paw_Footprint-d748bf4d-f3ff-4ae1-bce6-2b7cc8293f7c")]
 [assembly: System.Reflection.AssemblyCompanyAttribute("Cat_Paw_Footprint")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+b2e436f538b09549f5efa6ae76373a88cf07a6e9")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+c1c85823d63ade2c83e4827bb0c562bf014b52be")]
 [assembly: System.Reflection.AssemblyProductAttribute("Cat_Paw_Footprint")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Cat_Paw_Footprint")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

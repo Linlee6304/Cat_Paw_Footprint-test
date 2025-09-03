@@ -1,11 +1,13 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
 
 namespace Cat_Paw_Footprint.Models;
 
 public partial class DateDimension
 {
-    public int DateId { get; set; }
+	[Key]
+	public int DateID { get; set; }
 
     public DateTime? Date { get; set; }
 

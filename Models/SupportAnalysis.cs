@@ -5,9 +5,9 @@ namespace Cat_Paw_Footprint.Models;
 
 public partial class SupportAnalysis
 {
-    public int? DateId { get; set; }
+    public int? DateID { get; set; }
 
-    public int? TicketId { get; set; }
+    public int? TicketID { get; set; }
 
     public int? OpenedCount { get; set; }
 
@@ -19,5 +19,5 @@ public partial class SupportAnalysis
 
     public virtual DateDimension? Date { get; set; }
 
-    public virtual CustomerSupportTicket? Ticket { get; set; }
+    public virtual CustomerSupportTickets? Ticket { get; set; }
 }

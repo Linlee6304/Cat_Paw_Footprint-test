@@ -3,24 +3,44 @@
   "WorkspaceRootPath": "C:\\Users\\user\\Desktop\\MVC\\test\\Cat_Paw_Footprint\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{CFC03216-5C95-4FC9-B57C-D2B62C0A3FFF}|Cat_Paw_Footprint.csproj|c:\\users\\user\\desktop\\mvc\\test\\cat_paw_footprint\\areas\\employee\\controllers\\employeeauthcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{CFC03216-5C95-4FC9-B57C-D2B62C0A3FFF}|Cat_Paw_Footprint.csproj|solutionrelative:areas\\employee\\controllers\\employeeauthcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{EF838598-D8EA-4602-973E-B54C9768644A}|Cat_Paw_Footprint.csproj|c:\\users\\user\\desktop\\mvc\\test\\cat_paw_footprint\\areas\\employee\\controllers\\employeeauthcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EF838598-D8EA-4602-973E-B54C9768644A}|Cat_Paw_Footprint.csproj|solutionrelative:areas\\employee\\controllers\\employeeauthcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{CFC03216-5C95-4FC9-B57C-D2B62C0A3FFF}|Cat_Paw_Footprint.csproj|c:\\users\\user\\desktop\\mvc\\test\\cat_paw_footprint\\areas\\employee\\viewmodel\\loginviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{CFC03216-5C95-4FC9-B57C-D2B62C0A3FFF}|Cat_Paw_Footprint.csproj|solutionrelative:areas\\employee\\viewmodel\\loginviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{EF838598-D8EA-4602-973E-B54C9768644A}|Cat_Paw_Footprint.csproj|c:\\users\\user\\desktop\\mvc\\test\\cat_paw_footprint\\data\\employeedbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EF838598-D8EA-4602-973E-B54C9768644A}|Cat_Paw_Footprint.csproj|solutionrelative:data\\employeedbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{CFC03216-5C95-4FC9-B57C-D2B62C0A3FFF}|Cat_Paw_Footprint.csproj|c:\\users\\user\\desktop\\mvc\\test\\cat_paw_footprint\\data\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{CFC03216-5C95-4FC9-B57C-D2B62C0A3FFF}|Cat_Paw_Footprint.csproj|solutionrelative:data\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{EF838598-D8EA-4602-973E-B54C9768644A}|Cat_Paw_Footprint.csproj|c:\\users\\user\\desktop\\mvc\\test\\cat_paw_footprint\\models\\employeeprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EF838598-D8EA-4602-973E-B54C9768644A}|Cat_Paw_Footprint.csproj|solutionrelative:models\\employeeprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{CFC03216-5C95-4FC9-B57C-D2B62C0A3FFF}|Cat_Paw_Footprint.csproj|c:\\users\\user\\desktop\\mvc\\test\\cat_paw_footprint\\models\\employee.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{CFC03216-5C95-4FC9-B57C-D2B62C0A3FFF}|Cat_Paw_Footprint.csproj|solutionrelative:models\\employee.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{EF838598-D8EA-4602-973E-B54C9768644A}|Cat_Paw_Footprint.csproj|c:\\users\\user\\desktop\\mvc\\test\\cat_paw_footprint\\views\\shared\\_adminlayout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{EF838598-D8EA-4602-973E-B54C9768644A}|Cat_Paw_Footprint.csproj|solutionrelative:views\\shared\\_adminlayout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{CFC03216-5C95-4FC9-B57C-D2B62C0A3FFF}|Cat_Paw_Footprint.csproj|c:\\users\\user\\desktop\\mvc\\test\\cat_paw_footprint\\cat_paw_footprint.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
-      "RelativeMoniker": "D:0:0:{CFC03216-5C95-4FC9-B57C-D2B62C0A3FFF}|Cat_Paw_Footprint.csproj|solutionrelative:cat_paw_footprint.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+      "AbsoluteMoniker": "D:0:0:{EF838598-D8EA-4602-973E-B54C9768644A}|Cat_Paw_Footprint.csproj|c:\\users\\user\\desktop\\mvc\\test\\cat_paw_footprint\\areas\\employee\\viewmodel\\registerviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EF838598-D8EA-4602-973E-B54C9768644A}|Cat_Paw_Footprint.csproj|solutionrelative:areas\\employee\\viewmodel\\registerviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EF838598-D8EA-4602-973E-B54C9768644A}|Cat_Paw_Footprint.csproj|c:\\users\\user\\desktop\\mvc\\test\\cat_paw_footprint\\areas\\employee\\viewmodel\\loginviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EF838598-D8EA-4602-973E-B54C9768644A}|Cat_Paw_Footprint.csproj|solutionrelative:areas\\employee\\viewmodel\\loginviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EF838598-D8EA-4602-973E-B54C9768644A}|Cat_Paw_Footprint.csproj|c:\\users\\user\\desktop\\mvc\\test\\cat_paw_footprint\\areas\\employee\\views\\employeeauth\\register.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{EF838598-D8EA-4602-973E-B54C9768644A}|Cat_Paw_Footprint.csproj|solutionrelative:areas\\employee\\views\\employeeauth\\register.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EF838598-D8EA-4602-973E-B54C9768644A}|Cat_Paw_Footprint.csproj|c:\\users\\user\\desktop\\mvc\\test\\cat_paw_footprint\\areas\\employee\\views\\employeeauth\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{EF838598-D8EA-4602-973E-B54C9768644A}|Cat_Paw_Footprint.csproj|solutionrelative:areas\\employee\\views\\employeeauth\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EF838598-D8EA-4602-973E-B54C9768644A}|Cat_Paw_Footprint.csproj|c:\\users\\user\\desktop\\mvc\\test\\cat_paw_footprint\\areas\\employee\\views\\_viewstart.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{EF838598-D8EA-4602-973E-B54C9768644A}|Cat_Paw_Footprint.csproj|solutionrelative:areas\\employee\\views\\_viewstart.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EF838598-D8EA-4602-973E-B54C9768644A}|Cat_Paw_Footprint.csproj|c:\\users\\user\\desktop\\mvc\\test\\cat_paw_footprint\\models\\employees.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EF838598-D8EA-4602-973E-B54C9768644A}|Cat_Paw_Footprint.csproj|solutionrelative:models\\employees.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -30,7 +50,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 6,
+          "SelectedChildIndex": 8,
           "Children": [
             {
               "$type": "Bookmark",
@@ -51,28 +71,50 @@
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "LoginViewModel.cs",
-              "DocumentMoniker": "C:\\Users\\user\\Desktop\\MVC\\test\\Cat_Paw_Footprint\\Areas\\Employee\\ViewModel\\LoginViewModel.cs",
-              "RelativeDocumentMoniker": "Areas\\Employee\\ViewModel\\LoginViewModel.cs",
-              "ToolTip": "C:\\Users\\user\\Desktop\\MVC\\test\\Cat_Paw_Footprint\\Areas\\Employee\\ViewModel\\LoginViewModel.cs",
-              "RelativeToolTip": "Areas\\Employee\\ViewModel\\LoginViewModel.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Title": "EmployeeDbContext.cs",
+              "DocumentMoniker": "C:\\Users\\user\\Desktop\\MVC\\test\\Cat_Paw_Footprint\\Data\\EmployeeDbContext.cs",
+              "RelativeDocumentMoniker": "Data\\EmployeeDbContext.cs",
+              "ToolTip": "C:\\Users\\user\\Desktop\\MVC\\test\\Cat_Paw_Footprint\\Data\\EmployeeDbContext.cs",
+              "RelativeToolTip": "Data\\EmployeeDbContext.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAACAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-03T04:50:07.656Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-09-03T12:47:14.41Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "ApplicationDbContext.cs",
-              "DocumentMoniker": "C:\\Users\\user\\Desktop\\MVC\\test\\Cat_Paw_Footprint\\Data\\ApplicationDbContext.cs",
-              "RelativeDocumentMoniker": "Data\\ApplicationDbContext.cs",
-              "ToolTip": "C:\\Users\\user\\Desktop\\MVC\\test\\Cat_Paw_Footprint\\Data\\ApplicationDbContext.cs",
-              "RelativeToolTip": "Data\\ApplicationDbContext.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAJAAAAAAAAAA==",
+              "Title": "EmployeeProfile.cs",
+              "DocumentMoniker": "C:\\Users\\user\\Desktop\\MVC\\test\\Cat_Paw_Footprint\\Models\\EmployeeProfile.cs",
+              "RelativeDocumentMoniker": "Models\\EmployeeProfile.cs",
+              "ToolTip": "C:\\Users\\user\\Desktop\\MVC\\test\\Cat_Paw_Footprint\\Models\\EmployeeProfile.cs",
+              "RelativeToolTip": "Models\\EmployeeProfile.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAArAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-03T04:37:11.419Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-09-03T12:43:02.727Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Login.cshtml",
+              "DocumentMoniker": "C:\\Users\\user\\Desktop\\MVC\\test\\Cat_Paw_Footprint\\Areas\\Employee\\Views\\EmployeeAuth\\Login.cshtml",
+              "RelativeDocumentMoniker": "Areas\\Employee\\Views\\EmployeeAuth\\Login.cshtml",
+              "ToolTip": "C:\\Users\\user\\Desktop\\MVC\\test\\Cat_Paw_Footprint\\Areas\\Employee\\Views\\EmployeeAuth\\Login.cshtml",
+              "RelativeToolTip": "Areas\\Employee\\Views\\EmployeeAuth\\Login.cshtml",
+              "ViewState": "AgIAAAwAAAAAAAAAAAAAABoAAABgAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-09-03T12:33:32.136Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Register.cshtml",
+              "DocumentMoniker": "C:\\Users\\user\\Desktop\\MVC\\test\\Cat_Paw_Footprint\\Areas\\Employee\\Views\\EmployeeAuth\\Register.cshtml",
+              "RelativeDocumentMoniker": "Areas\\Employee\\Views\\EmployeeAuth\\Register.cshtml",
+              "ToolTip": "C:\\Users\\user\\Desktop\\MVC\\test\\Cat_Paw_Footprint\\Areas\\Employee\\Views\\EmployeeAuth\\Register.cshtml",
+              "RelativeToolTip": "Areas\\Employee\\Views\\EmployeeAuth\\Register.cshtml",
+              "ViewState": "AgIAAB0AAAAAAAAAAAAAADEAAAA/AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-09-03T11:01:22.242Z"
             },
             {
               "$type": "Document",
@@ -82,36 +124,70 @@
               "RelativeDocumentMoniker": "Areas\\Employee\\Controllers\\EmployeeAuthController.cs",
               "ToolTip": "C:\\Users\\user\\Desktop\\MVC\\test\\Cat_Paw_Footprint\\Areas\\Employee\\Controllers\\EmployeeAuthController.cs",
               "RelativeToolTip": "Areas\\Employee\\Controllers\\EmployeeAuthController.cs",
-              "ViewState": "AgIAADUAAAAAAAAAAAAgwC0AAAADAAAAAAAAAA==",
+              "ViewState": "AgIAAHoAAAAAAAAAAAArwIYAAAACAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-03T04:44:44.127Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "Employee.cs",
-              "DocumentMoniker": "C:\\Users\\user\\Desktop\\MVC\\test\\Cat_Paw_Footprint\\Models\\Employee.cs",
-              "RelativeDocumentMoniker": "Models\\Employee.cs",
-              "ToolTip": "C:\\Users\\user\\Desktop\\MVC\\test\\Cat_Paw_Footprint\\Models\\Employee.cs",
-              "RelativeToolTip": "Models\\Employee.cs",
-              "ViewState": "AgIAAAsAAAAAAAAAAAA3wAYAAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-03T04:48:55.354Z",
+              "WhenOpened": "2025-09-03T10:48:18.387Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 4,
-              "Title": "Cat_Paw_Footprint.csproj",
-              "DocumentMoniker": "C:\\Users\\user\\Desktop\\MVC\\test\\Cat_Paw_Footprint\\Cat_Paw_Footprint.csproj",
-              "RelativeDocumentMoniker": "Cat_Paw_Footprint.csproj",
-              "ToolTip": "C:\\Users\\user\\Desktop\\MVC\\test\\Cat_Paw_Footprint\\Cat_Paw_Footprint.csproj*",
-              "RelativeToolTip": "Cat_Paw_Footprint.csproj*",
+              "Title": "RegisterViewModel.cs",
+              "DocumentMoniker": "C:\\Users\\user\\Desktop\\MVC\\test\\Cat_Paw_Footprint\\Areas\\Employee\\ViewModel\\RegisterViewModel.cs",
+              "RelativeDocumentMoniker": "Areas\\Employee\\ViewModel\\RegisterViewModel.cs",
+              "ToolTip": "C:\\Users\\user\\Desktop\\MVC\\test\\Cat_Paw_Footprint\\Areas\\Employee\\ViewModel\\RegisterViewModel.cs",
+              "RelativeToolTip": "Areas\\Employee\\ViewModel\\RegisterViewModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-03T11:36:38.882Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "LoginViewModel.cs",
+              "DocumentMoniker": "C:\\Users\\user\\Desktop\\MVC\\test\\Cat_Paw_Footprint\\Areas\\Employee\\ViewModel\\LoginViewModel.cs",
+              "RelativeDocumentMoniker": "Areas\\Employee\\ViewModel\\LoginViewModel.cs",
+              "ToolTip": "C:\\Users\\user\\Desktop\\MVC\\test\\Cat_Paw_Footprint\\Areas\\Employee\\ViewModel\\LoginViewModel.cs",
+              "RelativeToolTip": "Areas\\Employee\\ViewModel\\LoginViewModel.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2025-09-03T02:17:20.582Z",
-              "EditorCaption": ""
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-03T12:33:27.967Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "_ViewStart.cshtml",
+              "DocumentMoniker": "C:\\Users\\user\\Desktop\\MVC\\test\\Cat_Paw_Footprint\\Areas\\Employee\\Views\\_ViewStart.cshtml",
+              "RelativeDocumentMoniker": "Areas\\Employee\\Views\\_ViewStart.cshtml",
+              "ToolTip": "C:\\Users\\user\\Desktop\\MVC\\test\\Cat_Paw_Footprint\\Areas\\Employee\\Views\\_ViewStart.cshtml",
+              "RelativeToolTip": "Areas\\Employee\\Views\\_ViewStart.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-09-03T11:22:11.698Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "Employees.cs",
+              "DocumentMoniker": "C:\\Users\\user\\Desktop\\MVC\\test\\Cat_Paw_Footprint\\Models\\Employees.cs",
+              "RelativeDocumentMoniker": "Models\\Employees.cs",
+              "ToolTip": "C:\\Users\\user\\Desktop\\MVC\\test\\Cat_Paw_Footprint\\Models\\Employees.cs",
+              "RelativeToolTip": "Models\\Employees.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAATAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-03T10:53:23.896Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "_AdminLayout.cshtml",
+              "DocumentMoniker": "C:\\Users\\user\\Desktop\\MVC\\test\\Cat_Paw_Footprint\\Views\\Shared\\_AdminLayout.cshtml",
+              "RelativeDocumentMoniker": "Views\\Shared\\_AdminLayout.cshtml",
+              "ToolTip": "C:\\Users\\user\\Desktop\\MVC\\test\\Cat_Paw_Footprint\\Views\\Shared\\_AdminLayout.cshtml",
+              "RelativeToolTip": "Views\\Shared\\_AdminLayout.cshtml",
+              "ViewState": "AgIAADkAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-09-03T11:53:37.436Z"
             }
           ]
         }

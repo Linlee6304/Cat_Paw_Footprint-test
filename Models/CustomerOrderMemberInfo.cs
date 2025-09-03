@@ -5,13 +5,13 @@ namespace Cat_Paw_Footprint.Models;
 
 public partial class CustomerOrderMemberInfo
 {
-    public int? OrderId { get; set; }
+    public int? OrderID { get; set; }
 
     public string? CustomerName { get; set; }
 
-    public string? Idnumber { get; set; }
+    public string? IDNumber { get; set; }
 
     public DateTime? CustomerBirth { get; set; }
 
-    public virtual CustomerOrder? Order { get; set; }
+    public virtual CustomerOrders? Order { get; set; }
 }

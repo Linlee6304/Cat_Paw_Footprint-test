@@ -1,17 +1,19 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
 
 namespace Cat_Paw_Footprint.Models;
 
 public partial class CustomerProfile
 {
-    public int CustomerProfilesId { get; set; }
+	[Key]
+	public int CustomerProfilesID { get; set; }
 
-    public int? CustomerId { get; set; }
+    public int? CustomerID { get; set; }
 
     public string? CustomerName { get; set; }
 
-    public string? Idnumber { get; set; }
+    public string? IDNumber { get; set; }
 
     public string? Phone { get; set; }
 
@@ -19,13 +21,13 @@ public partial class CustomerProfile
 
     public string? Address { get; set; }
 
-    public string? ProfileCode { get; set; }
+    public string? CustomerProfileCode { get; set; }
 
-    public virtual Customer Customer { get; set; } = null!;
+    public virtual Customers Customer { get; set; } = null!;
 
-    public virtual ICollection<CustomerBlacklist> CustomerBlacklists { get; set; } = new List<CustomerBlacklist>();
+    public virtual ICollection<CustomerBlacklist> CustomerBlacklist { get; set; } = new List<CustomerBlacklist>();
 
-    public virtual ICollection<CustomerOrder> CustomerOrders { get; set; } = new List<CustomerOrder>();
+    public virtual ICollection<CustomerOrders> CustomerOrders { get; set; } = new List<CustomerOrders>();
 
-    public virtual ICollection<CustomerSupportTicket> CustomerSupportTickets { get; set; } = new List<CustomerSupportTicket>();
+    public virtual ICollection<CustomerSupportTickets> CustomerSupportTickets { get; set; } = new List<CustomerSupportTickets>();
 }

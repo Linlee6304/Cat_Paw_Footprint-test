@@ -4,210 +4,186 @@ using Microsoft.EntityFrameworkCore;
 
 namespace Cat_Paw_Footprint.Models;
 
-public partial class WebTravel2Context : DbContext
+public partial class webtravel2Context : DbContext
 {
-    public WebTravel2Context(DbContextOptions<WebTravel2Context> options)
+    public webtravel2Context()
+    {
+    }
+
+    public webtravel2Context(DbContextOptions<webtravel2Context> options)
         : base(options)
     {
     }
 
-    public virtual DbSet<Coupon> Coupons { get; set; }
+    public virtual DbSet<CouponPics> CouponPics { get; set; }
 
-    public virtual DbSet<CouponPic> CouponPics { get; set; }
+    public virtual DbSet<Coupons> Coupons { get; set; }
 
-    public virtual DbSet<Customer> Customers { get; set; }
+    public virtual DbSet<CustomerBlacklist> CustomerBlacklist { get; set; }
 
-    public virtual DbSet<CustomerBlacklist> CustomerBlacklists { get; set; }
+    public virtual DbSet<CustomerCouponsRecords> CustomerCouponsRecords { get; set; }
 
-    public virtual DbSet<CustomerCouponsRecord> CustomerCouponsRecords { get; set; }
+    public virtual DbSet<CustomerLevels> CustomerLevels { get; set; }
 
-    public virtual DbSet<CustomerLevel> CustomerLevels { get; set; }
+    public virtual DbSet<CustomerLoginHistory> CustomerLoginHistory { get; set; }
 
-    public virtual DbSet<CustomerLoginHistory> CustomerLoginHistories { get; set; }
+    public virtual DbSet<CustomerOrderFeedback> CustomerOrderFeedback { get; set; }
 
-    public virtual DbSet<CustomerOrder> CustomerOrders { get; set; }
+    public virtual DbSet<CustomerOrderMemberInfo> CustomerOrderMemberInfo { get; set; }
 
-    public virtual DbSet<CustomerOrderFeedback> CustomerOrderFeedbacks { get; set; }
+    public virtual DbSet<CustomerOrders> CustomerOrders { get; set; }
 
-    public virtual DbSet<CustomerOrderMemberInfo> CustomerOrderMemberInfos { get; set; }
+    public virtual DbSet<CustomerProfile> CustomerProfile { get; set; }
 
-    public virtual DbSet<CustomerProfile> CustomerProfiles { get; set; }
+    public virtual DbSet<CustomerSupportFeedback> CustomerSupportFeedback { get; set; }
 
-    public virtual DbSet<CustomerSupportFeedback> CustomerSupportFeedbacks { get; set; }
+    public virtual DbSet<CustomerSupportMessages> CustomerSupportMessages { get; set; }
 
-    public virtual DbSet<CustomerSupportMessage> CustomerSupportMessages { get; set; }
+    public virtual DbSet<CustomerSupportTickets> CustomerSupportTickets { get; set; }
 
-    public virtual DbSet<CustomerSupportTicket> CustomerSupportTickets { get; set; }
+    public virtual DbSet<CustomerTripProjects> CustomerTripProjects { get; set; }
 
-    public virtual DbSet<CustomerTripProject> CustomerTripProjects { get; set; }
+    public virtual DbSet<Customers> Customers { get; set; }
 
-    public virtual DbSet<DateDimension> DateDimensions { get; set; }
+    public virtual DbSet<DateDimension> DateDimension { get; set; }
 
-    public virtual DbSet<District> Districts { get; set; }
+    public virtual DbSet<Districts> Districts { get; set; }
 
-    public virtual DbSet<Employee> Employees { get; set; }
+    public virtual DbSet<EmployeeProfile> EmployeeProfile { get; set; }
 
-    public virtual DbSet<EmployeeProfile> EmployeeProfiles { get; set; }
+    public virtual DbSet<EmployeeRoles> EmployeeRoles { get; set; }
 
-    public virtual DbSet<EmployeeRole> EmployeeRoles { get; set; }
+    public virtual DbSet<Employees> Employees { get; set; }
 
-    public virtual DbSet<Faq> Faqs { get; set; }
+    public virtual DbSet<FAQCategorys> FAQCategorys { get; set; }
 
-    public virtual DbSet<Faqcategory> Faqcategorys { get; set; }
+    public virtual DbSet<FAQs> FAQs { get; set; }
 
-    public virtual DbSet<Hotel> Hotels { get; set; }
+    public virtual DbSet<HotelKeywords> HotelKeywords { get; set; }
 
-    public virtual DbSet<HotelKeyword> HotelKeywords { get; set; }
+    public virtual DbSet<HotelPics> HotelPics { get; set; }
 
-    public virtual DbSet<HotelPic> HotelPics { get; set; }
+    public virtual DbSet<Hotels> Hotels { get; set; }
 
-    public virtual DbSet<Keyword> Keywords { get; set; }
+    public virtual DbSet<Keywords> Keywords { get; set; }
 
-    public virtual DbSet<Location> Locations { get; set; }
+    public virtual DbSet<LocationKeywords> LocationKeywords { get; set; }
 
-    public virtual DbSet<LocationKeyword> LocationKeywords { get; set; }
+    public virtual DbSet<LocationPics> LocationPics { get; set; }
 
-    public virtual DbSet<LocationPic> LocationPics { get; set; }
+    public virtual DbSet<Locations> Locations { get; set; }
 
-    public virtual DbSet<NewsPic> NewsPics { get; set; }
+    public virtual DbSet<NewsPics> NewsPics { get; set; }
 
-    public virtual DbSet<NewsTable> NewsTables { get; set; }
+    public virtual DbSet<NewsTable> NewsTable { get; set; }
 
-    public virtual DbSet<OrderPaymentInfo> OrderPaymentInfos { get; set; }
+    public virtual DbSet<OrderPaymentInfo> OrderPaymentInfo { get; set; }
 
-    public virtual DbSet<OrderStatus> OrderStatuses { get; set; }
+    public virtual DbSet<OrderStatus> OrderStatus { get; set; }
 
-    public virtual DbSet<PaymentStatus> PaymentStatuses { get; set; }
+    public virtual DbSet<PaymentStatus> PaymentStatus { get; set; }
 
-    public virtual DbSet<Product> Products { get; set; }
+    public virtual DbSet<ProductAnalysis> ProductAnalysis { get; set; }
 
-    public virtual DbSet<ProductAnalysis> ProductAnalyses { get; set; }
+    public virtual DbSet<ProductPics> ProductPics { get; set; }
 
-    public virtual DbSet<ProductPic> ProductPics { get; set; }
+    public virtual DbSet<Products> Products { get; set; }
 
-    public virtual DbSet<ProductsHotel> ProductsHotels { get; set; }
+    public virtual DbSet<Products_Hotels> Products_Hotels { get; set; }
 
-    public virtual DbSet<ProductsLocation> ProductsLocations { get; set; }
+    public virtual DbSet<Products_Locations> Products_Locations { get; set; }
 
-    public virtual DbSet<ProductsPromotion> ProductsPromotions { get; set; }
+    public virtual DbSet<Products_Promotions> Products_Promotions { get; set; }
 
-    public virtual DbSet<ProductsRestaurant> ProductsRestaurants { get; set; }
+    public virtual DbSet<Products_Restaurants> Products_Restaurants { get; set; }
 
-    public virtual DbSet<ProductsTransportation> ProductsTransportations { get; set; }
+    public virtual DbSet<Products_Transportations> Products_Transportations { get; set; }
 
-    public virtual DbSet<Promotion> Promotions { get; set; }
+    public virtual DbSet<Promotions> Promotions { get; set; }
 
-    public virtual DbSet<Region> Regions { get; set; }
+    public virtual DbSet<Regions> Regions { get; set; }
 
-    public virtual DbSet<Restaurant> Restaurants { get; set; }
+    public virtual DbSet<RestaurantKeywords> RestaurantKeywords { get; set; }
 
-    public virtual DbSet<RestaurantKeyword> RestaurantKeywords { get; set; }
+    public virtual DbSet<RestaurantPics> RestaurantPics { get; set; }
 
-    public virtual DbSet<RestaurantPic> RestaurantPics { get; set; }
+    public virtual DbSet<Restaurants> Restaurants { get; set; }
 
-    public virtual DbSet<SemiHotel> SemiHotels { get; set; }
+    public virtual DbSet<SemiSelfProducts> SemiSelfProducts { get; set; }
 
-    public virtual DbSet<SemiLocation> SemiLocations { get; set; }
+    public virtual DbSet<Semi_Hotels> Semi_Hotels { get; set; }
 
-    public virtual DbSet<SemiSelfProduct> SemiSelfProducts { get; set; }
+    public virtual DbSet<Semi_Locations> Semi_Locations { get; set; }
 
-    public virtual DbSet<SemiTransportation> SemiTransportations { get; set; }
+    public virtual DbSet<Semi_Transportations> Semi_Transportations { get; set; }
 
-    public virtual DbSet<SupportAnalysis> SupportAnalyses { get; set; }
+    public virtual DbSet<SupportAnalysis> SupportAnalysis { get; set; }
 
-    public virtual DbSet<TicketPriority> TicketPriorities { get; set; }
+    public virtual DbSet<TicketPriority> TicketPriority { get; set; }
 
-    public virtual DbSet<TicketStatus> TicketStatuses { get; set; }
+    public virtual DbSet<TicketStatus> TicketStatus { get; set; }
 
-    public virtual DbSet<TicketType> TicketTypes { get; set; }
+    public virtual DbSet<TicketTypes> TicketTypes { get; set; }
 
-    public virtual DbSet<TransportKeyword> TransportKeywords { get; set; }
+    public virtual DbSet<TransportKeywords> TransportKeywords { get; set; }
 
-    public virtual DbSet<TransportPic> TransportPics { get; set; }
+    public virtual DbSet<TransportPics> TransportPics { get; set; }
 
-    public virtual DbSet<Transportation> Transportations { get; set; }
+    public virtual DbSet<Transportations> Transportations { get; set; }
 
-    public virtual DbSet<TripProjectDetail> TripProjectDetails { get; set; }
+    public virtual DbSet<TripProjectDetails> TripProjectDetails { get; set; }
+
+    protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
+#warning To protect potentially sensitive information in your connection string, you should move it out of source code. You can avoid scaffolding the connection string by using the Name= syntax to read it from configuration - see https://go.microsoft.com/fwlink/?linkid=2131148. For more guidance on storing connection strings, see https://go.microsoft.com/fwlink/?LinkId=723263.
+        => optionsBuilder.UseSqlServer("Data Source=LAPTOP-GD2BR52T\\SQLEXPRESS;Initial Catalog=web-travel2;Integrated Security=True;TrustServerCertificate=True;");
 
     protected override void OnModelCreating(ModelBuilder modelBuilder)
     {
-        modelBuilder.Entity<Coupon>(entity =>
+        modelBuilder.Entity<CouponPics>(entity =>
         {
-            entity.HasKey(e => e.CouponId).HasName("PK__Coupons__384AF1DAA63FECA6");
+            entity.HasNoKey();
 
-            entity.HasIndex(e => e.CouponCode, "UQ__Coupons__D3490800A9C7E8AC").IsUnique();
+            entity.HasOne(d => d.Coupon).WithMany()
+                .HasForeignKey(d => d.CouponID)
+                .HasConstraintName("FK__CouponPic__Coupo__151B244E");
+        });
 
-            entity.Property(e => e.CouponId).HasColumnName("CouponID");
+        modelBuilder.Entity<Coupons>(entity =>
+        {
+            entity.HasKey(e => e.CouponID).HasName("PK__Coupons__384AF1DA962AEEC5");
+
+            entity.HasIndex(e => e.CouponCode, "UQ__Coupons__D3490800F4D03A6F").IsUnique();
+
             entity.Property(e => e.CouponCode).HasMaxLength(50);
             entity.Property(e => e.DiscountValue).HasColumnType("numeric(7, 2)");
         });
 
-        modelBuilder.Entity<CouponPic>(entity =>
-        {
-            entity.HasNoKey();
-
-            entity.Property(e => e.CouponId).HasColumnName("CouponID");
-
-            entity.HasOne(d => d.Coupon).WithMany()
-                .HasForeignKey(d => d.CouponId)
-                .HasConstraintName("FK__CouponPic__Coupo__40058253");
-        });
-
-        modelBuilder.Entity<Customer>(entity =>
-        {
-            entity.HasKey(e => e.CustomerId).HasName("PK__Customer__A4AE64B871483160");
-
-            entity.HasIndex(e => e.CustomerCode, "UQ_Customers_CustomerCode").IsUnique();
-
-            entity.HasIndex(e => e.Account, "UQ__Customer__B0C3AC46C3B22E74").IsUnique();
-
-            entity.Property(e => e.CustomerId).HasColumnName("CustomerID");
-            entity.Property(e => e.Account).HasMaxLength(50);
-            entity.Property(e => e.CustomerCode)
-                .HasMaxLength(4000)
-                .HasComputedColumnSql("((N'Cus'+replicate(N'0',case when len(CONVERT([varchar](20),[CustomerID]))<(5) then (5)-len(CONVERT([varchar](20),[CustomerID])) else (0) end))+CONVERT([varchar](20),[CustomerID]))", true);
-            entity.Property(e => e.FullName).HasMaxLength(20);
-            entity.Property(e => e.Password).HasMaxLength(200);
-
-            entity.HasOne(d => d.LevelNavigation).WithMany(p => p.Customers)
-                .HasForeignKey(d => d.Level)
-                .HasConstraintName("FK__Customers__Level__18EBB532");
-        });
-
         modelBuilder.Entity<CustomerBlacklist>(entity =>
         {
-            entity.HasKey(e => e.BlacklistId).HasName("PK__Customer__AFDBF438A631D061");
+            entity.HasKey(e => e.BlacklistID).HasName("PK__Customer__AFDBF43883D62D6E");
 
-            entity.ToTable("CustomerBlacklist");
-
-            entity.Property(e => e.BlacklistId).HasColumnName("BlacklistID");
-            entity.Property(e => e.CustomerId).HasColumnName("CustomerID");
-
-            entity.HasOne(d => d.Customer).WithMany(p => p.CustomerBlacklists)
-                .HasPrincipalKey(p => p.CustomerId)
-                .HasForeignKey(d => d.CustomerId)
-                .HasConstraintName("FK__CustomerB__Custo__5224328E");
+            entity.HasOne(d => d.Customer).WithMany(p => p.CustomerBlacklist)
+                .HasPrincipalKey(p => p.CustomerID)
+                .HasForeignKey(d => d.CustomerID)
+                .HasConstraintName("FK__CustomerB__Custo__160F4887");
         });
 
-        modelBuilder.Entity<CustomerCouponsRecord>(entity =>
+        modelBuilder.Entity<CustomerCouponsRecords>(entity =>
         {
             entity.HasNoKey();
 
-            entity.Property(e => e.CouponId).HasColumnName("CouponID");
-            entity.Property(e => e.CustomerId).HasColumnName("CustomerID");
-
             entity.HasOne(d => d.Coupon).WithMany()
-                .HasForeignKey(d => d.CouponId)
-                .HasConstraintName("FK__CustomerC__Coupo__41EDCAC5");
+                .HasForeignKey(d => d.CouponID)
+                .HasConstraintName("FK__CustomerC__Coupo__17036CC0");
 
             entity.HasOne(d => d.Customer).WithMany()
-                .HasForeignKey(d => d.CustomerId)
-                .HasConstraintName("FK__CustomerC__Custo__40F9A68C");
+                .HasForeignKey(d => d.CustomerID)
+                .HasConstraintName("FK__CustomerC__Custo__17F790F9");
         });
 
-        modelBuilder.Entity<CustomerLevel>(entity =>
+        modelBuilder.Entity<CustomerLevels>(entity =>
         {
-            entity.HasKey(e => e.Level).HasName("PK__Customer__AAF89963DA4B1984");
+            entity.HasKey(e => e.Level).HasName("PK__Customer__AAF8996343B0DC7B");
 
             entity.Property(e => e.Level).ValueGeneratedNever();
             entity.Property(e => e.LevelName).HasMaxLength(20);
@@ -215,851 +191,685 @@ public partial class WebTravel2Context : DbContext
 
         modelBuilder.Entity<CustomerLoginHistory>(entity =>
         {
-            entity.HasKey(e => e.LoginLogId).HasName("PK__Customer__D42E7ACC5FE72CCC");
+            entity.HasKey(e => e.LoginLogID).HasName("PK__Customer__D42E7ACC91490DF1");
 
-            entity.ToTable("CustomerLoginHistory");
+            entity.Property(e => e.LoginLogID).ValueGeneratedNever();
+            entity.Property(e => e.LoginIP).HasMaxLength(45);
 
-            entity.Property(e => e.LoginLogId)
-                .ValueGeneratedNever()
-                .HasColumnName("LoginLogID");
-            entity.Property(e => e.CustomerId).HasColumnName("CustomerID");
-            entity.Property(e => e.LoginIp)
-                .HasMaxLength(45)
-                .HasColumnName("LoginIP");
-
-            entity.HasOne(d => d.Customer).WithMany(p => p.CustomerLoginHistories)
-                .HasForeignKey(d => d.CustomerId)
-                .HasConstraintName("FK__CustomerL__Custo__17F790F9");
-        });
-
-        modelBuilder.Entity<CustomerOrder>(entity =>
-        {
-            entity.HasKey(e => e.OrderId).HasName("PK__Customer__C3905BAF82D75597");
-
-            entity.Property(e => e.OrderId).HasColumnName("OrderID");
-            entity.Property(e => e.CustomerId).HasColumnName("CustomerID");
-            entity.Property(e => e.OrderStatusId).HasColumnName("OrderStatusID");
-            entity.Property(e => e.ProductId).HasColumnName("ProductID");
-
-            entity.HasOne(d => d.Customer).WithMany(p => p.CustomerOrders)
-                .HasPrincipalKey(p => p.CustomerId)
-                .HasForeignKey(d => d.CustomerId)
-                .HasConstraintName("FK__CustomerO__Custo__42E1EEFE");
-
-            entity.HasOne(d => d.OrderStatus).WithMany(p => p.CustomerOrders)
-                .HasForeignKey(d => d.OrderStatusId)
-                .HasConstraintName("FK__CustomerO__Order__45BE5BA9");
-
-            entity.HasOne(d => d.Product).WithMany(p => p.CustomerOrders)
-                .HasForeignKey(d => d.ProductId)
-                .HasConstraintName("FK__CustomerO__Produ__43D61337");
-
-            entity.HasOne(d => d.ProductNavigation).WithMany(p => p.CustomerOrders)
-                .HasForeignKey(d => d.ProductId)
-                .HasConstraintName("FK__CustomerO__Produ__44CA3770");
+            entity.HasOne(d => d.Customer).WithMany(p => p.CustomerLoginHistory)
+                .HasForeignKey(d => d.CustomerID)
+                .HasConstraintName("FK__CustomerL__Custo__18EBB532");
         });
 
         modelBuilder.Entity<CustomerOrderFeedback>(entity =>
         {
-            entity.HasKey(e => e.FeedbackId).HasName("PK__Customer__6A4BEDF6CECCAC3D");
+            entity.HasKey(e => e.FeedbackID).HasName("PK__Customer__6A4BEDF6B94D8C76");
 
-            entity.ToTable("CustomerOrderFeedback");
-
-            entity.Property(e => e.FeedbackId).HasColumnName("FeedbackID");
-            entity.Property(e => e.CustomerId).HasColumnName("CustomerID");
-            entity.Property(e => e.OrderId).HasColumnName("OrderID");
-
-            entity.HasOne(d => d.Order).WithMany(p => p.CustomerOrderFeedbacks)
-                .HasForeignKey(d => d.OrderId)
-                .HasConstraintName("FK__CustomerO__Order__46B27FE2");
+            entity.HasOne(d => d.Order).WithMany(p => p.CustomerOrderFeedback)
+                .HasForeignKey(d => d.OrderID)
+                .HasConstraintName("FK__CustomerO__Order__19DFD96B");
         });
 
         modelBuilder.Entity<CustomerOrderMemberInfo>(entity =>
         {
-            entity
-                .HasNoKey()
-                .ToTable("CustomerOrderMemberInfo");
+            entity.HasNoKey();
 
             entity.Property(e => e.CustomerName).HasMaxLength(50);
-            entity.Property(e => e.Idnumber)
-                .HasMaxLength(20)
-                .HasColumnName("IDNumber");
-            entity.Property(e => e.OrderId).HasColumnName("OrderID");
+            entity.Property(e => e.IDNumber).HasMaxLength(20);
 
             entity.HasOne(d => d.Order).WithMany()
-                .HasForeignKey(d => d.OrderId)
-                .HasConstraintName("FK__CustomerO__Order__47A6A41B");
+                .HasForeignKey(d => d.OrderID)
+                .HasConstraintName("FK__CustomerO__Order__1BC821DD");
+        });
+
+        modelBuilder.Entity<CustomerOrders>(entity =>
+        {
+            entity.HasKey(e => e.OrderID).HasName("PK__Customer__C3905BAFC1E5D4B0");
+
+            entity.HasOne(d => d.Customer).WithMany(p => p.CustomerOrders)
+                .HasPrincipalKey(p => p.CustomerID)
+                .HasForeignKey(d => d.CustomerID)
+                .HasConstraintName("FK__CustomerO__Custo__1CBC4616");
+
+            entity.HasOne(d => d.OrderStatus).WithMany(p => p.CustomerOrders)
+                .HasForeignKey(d => d.OrderStatusID)
+                .HasConstraintName("FK__CustomerO__Order__1DB06A4F");
+
+            entity.HasOne(d => d.Product).WithMany(p => p.CustomerOrders)
+                .HasForeignKey(d => d.ProductID)
+                .HasConstraintName("FK__CustomerO__Produ__1EA48E88");
         });
 
         modelBuilder.Entity<CustomerProfile>(entity =>
         {
-            entity.HasKey(e => e.CustomerProfilesId).HasName("PK__Customer__13B529265313EC3F");
+            entity.HasKey(e => e.CustomerProfilesID).HasName("PK__Customer__13B52926385BD265");
 
-            entity.ToTable("CustomerProfile");
+            entity.HasIndex(e => e.CustomerID, "UQ__Customer__A4AE64B9F2B78F1D").IsUnique();
 
-            entity.HasIndex(e => e.ProfileCode, "UQ_CustomerProfile_ProfileCode").IsUnique();
-
-            entity.HasIndex(e => e.CustomerId, "UQ__Customer__A4AE64B992F63C82").IsUnique();
-
-            entity.Property(e => e.CustomerProfilesId).HasColumnName("CustomerProfilesID");
             entity.Property(e => e.Address).HasMaxLength(200);
-            entity.Property(e => e.CustomerId)
-                .IsRequired()
-                .HasColumnName("CustomerID");
+            entity.Property(e => e.CustomerID).IsRequired();
             entity.Property(e => e.CustomerName).HasMaxLength(50);
+            entity.Property(e => e.CustomerProfileCode)
+                .HasMaxLength(20)
+                .IsUnicode(false);
             entity.Property(e => e.Email)
                 .HasMaxLength(100)
                 .IsUnicode(false);
-            entity.Property(e => e.Idnumber)
+            entity.Property(e => e.IDNumber)
                 .HasMaxLength(10)
-                .IsUnicode(false)
-                .HasColumnName("IDNumber");
+                .IsUnicode(false);
             entity.Property(e => e.Phone)
                 .HasMaxLength(20)
                 .IsUnicode(false);
-            entity.Property(e => e.ProfileCode)
-                .HasMaxLength(4000)
-                .HasComputedColumnSql("((N'CusPD'+replicate(N'0',case when len(CONVERT([varchar](20),[CustomerProfilesID]))<(5) then (5)-len(CONVERT([varchar](20),[CustomerProfilesID])) else (0) end))+CONVERT([varchar](20),[CustomerProfilesID]))", true);
 
             entity.HasOne(d => d.Customer).WithOne(p => p.CustomerProfile)
-                .HasForeignKey<CustomerProfile>(d => d.CustomerId)
+                .HasForeignKey<CustomerProfile>(d => d.CustomerID)
                 .OnDelete(DeleteBehavior.ClientSetNull)
-                .HasConstraintName("FK__CustomerP__Custo__17036CC0");
+                .HasConstraintName("FK__CustomerP__Custo__1F98B2C1");
         });
 
         modelBuilder.Entity<CustomerSupportFeedback>(entity =>
         {
-            entity.HasKey(e => e.FeedbackId).HasName("PK__Customer__6A4BEDF6E6C5961B");
+            entity.HasKey(e => e.FeedbackID).HasName("PK__Customer__6A4BEDF6A2776794");
 
-            entity.ToTable("CustomerSupportFeedback");
-
-            entity.Property(e => e.FeedbackId).HasColumnName("FeedbackID");
-            entity.Property(e => e.CustomerId).HasColumnName("CustomerID");
-            entity.Property(e => e.TicketId).HasColumnName("TicketID");
-
-            entity.HasOne(d => d.Ticket).WithMany(p => p.CustomerSupportFeedbacks)
-                .HasForeignKey(d => d.TicketId)
-                .HasConstraintName("FK__CustomerS__Ticke__4F47C5E3");
+            entity.HasOne(d => d.Ticket).WithMany(p => p.CustomerSupportFeedback)
+                .HasForeignKey(d => d.TicketID)
+                .HasConstraintName("FK__CustomerS__Ticke__2180FB33");
         });
 
-        modelBuilder.Entity<CustomerSupportMessage>(entity =>
+        modelBuilder.Entity<CustomerSupportMessages>(entity =>
         {
-            entity.HasKey(e => e.MessageId).HasName("PK__Customer__C87C037C881AA82A");
+            entity.HasKey(e => e.MessageID).HasName("PK__Customer__C87C037CEEF7F82E");
 
-            entity.HasIndex(e => e.TicketId, "UQ__Customer__712CC626DA18075A").IsUnique();
+            entity.HasIndex(e => e.TicketID, "UQ__Customer__712CC626BE2040FE").IsUnique();
 
-            entity.Property(e => e.MessageId).HasColumnName("MessageID");
-            entity.Property(e => e.AttachmentUrl)
-                .HasMaxLength(500)
-                .HasColumnName("AttachmentURL");
-            entity.Property(e => e.ReceiverId).HasColumnName("ReceiverID");
-            entity.Property(e => e.SenderId).HasColumnName("SenderID");
-            entity.Property(e => e.TicketId).HasColumnName("TicketID");
+            entity.Property(e => e.AttachmentURL).HasMaxLength(500);
 
-            entity.HasOne(d => d.Ticket).WithOne(p => p.CustomerSupportMessage)
-                .HasForeignKey<CustomerSupportMessage>(d => d.TicketId)
-                .HasConstraintName("FK__CustomerS__Ticke__4A8310C6");
-        });
+            entity.HasOne(d => d.Ticket).WithMany(p => p.Messages)
+				.HasForeignKey(d => d.TicketID)
+		.HasConstraintName("FK__CustomerS__Ticke__22751F6C");
+		});
 
-        modelBuilder.Entity<CustomerSupportTicket>(entity =>
+        modelBuilder.Entity<CustomerSupportTickets>(entity =>
         {
-            entity.HasKey(e => e.TicketId).HasName("PK__Customer__712CC627F1BDDA18");
+            entity.HasKey(e => e.TicketID).HasName("PK__Customer__712CC627B75D65D4");
 
-            entity.Property(e => e.TicketId).HasColumnName("TicketID");
-            entity.Property(e => e.CustomerId).HasColumnName("CustomerID");
-            entity.Property(e => e.EmployeeId).HasColumnName("EmployeeID");
-            entity.Property(e => e.PriorityId).HasColumnName("PriorityID");
-            entity.Property(e => e.StatusId).HasColumnName("StatusID");
             entity.Property(e => e.Subject).HasMaxLength(200);
-            entity.Property(e => e.TicketTypeId).HasColumnName("TicketTypeID");
 
             entity.HasOne(d => d.Customer).WithMany(p => p.CustomerSupportTickets)
-                .HasPrincipalKey(p => p.CustomerId)
-                .HasForeignKey(d => d.CustomerId)
-                .HasConstraintName("FK__CustomerS__Custo__4D5F7D71");
+                .HasPrincipalKey(p => p.CustomerID)
+                .HasForeignKey(d => d.CustomerID)
+                .HasConstraintName("FK__CustomerS__Custo__236943A5");
 
             entity.HasOne(d => d.Employee).WithMany(p => p.CustomerSupportTickets)
-                .HasForeignKey(d => d.EmployeeId)
-                .HasConstraintName("FK__CustomerS__Emplo__4E53A1AA");
+                .HasForeignKey(d => d.EmployeeID)
+                .HasConstraintName("FK__CustomerS__Emplo__245D67DE");
 
             entity.HasOne(d => d.Priority).WithMany(p => p.CustomerSupportTickets)
-                .HasForeignKey(d => d.PriorityId)
-                .HasConstraintName("FK__CustomerS__Prior__4C6B5938");
+                .HasForeignKey(d => d.PriorityID)
+                .HasConstraintName("FK__CustomerS__Prior__25518C17");
 
             entity.HasOne(d => d.Status).WithMany(p => p.CustomerSupportTickets)
-                .HasForeignKey(d => d.StatusId)
-                .HasConstraintName("FK__CustomerS__Statu__4B7734FF");
+                .HasForeignKey(d => d.StatusID)
+                .HasConstraintName("FK__CustomerS__Statu__2645B050");
 
             entity.HasOne(d => d.TicketType).WithMany(p => p.CustomerSupportTickets)
-                .HasForeignKey(d => d.TicketTypeId)
-                .HasConstraintName("FK__CustomerS__Ticke__503BEA1C");
+                .HasForeignKey(d => d.TicketTypeID)
+                .HasConstraintName("FK__CustomerS__Ticke__2739D489");
         });
 
-        modelBuilder.Entity<CustomerTripProject>(entity =>
+        modelBuilder.Entity<CustomerTripProjects>(entity =>
         {
-            entity.HasKey(e => e.ProjectId).HasName("PK__Customer__761ABED0D737A839");
+            entity.HasKey(e => e.ProjectID).HasName("PK__Customer__761ABED0C9A3562A");
 
-            entity.Property(e => e.ProjectId).HasColumnName("ProjectID");
-            entity.Property(e => e.CustomerId).HasColumnName("CustomerID");
             entity.Property(e => e.ProjectName).HasMaxLength(100);
+        });
+
+        modelBuilder.Entity<Customers>(entity =>
+        {
+            entity.HasKey(e => e.CustomerID).HasName("PK__Customer__A4AE64B82A50E373");
+
+            entity.HasIndex(e => e.Account, "UQ__Customer__B0C3AC468D583DE7").IsUnique();
+
+            entity.Property(e => e.Account).HasMaxLength(50);
+            entity.Property(e => e.CustomerCode)
+                .HasMaxLength(20)
+                .IsUnicode(false);
+            entity.Property(e => e.FullName).HasMaxLength(20);
+            entity.Property(e => e.Password).HasMaxLength(200);
+
+            entity.HasOne(d => d.LevelNavigation).WithMany(p => p.Customers)
+                .HasForeignKey(d => d.Level)
+                .HasConstraintName("FK__Customers__Level__208CD6FA");
         });
 
         modelBuilder.Entity<DateDimension>(entity =>
         {
-            entity.HasKey(e => e.DateId).HasName("PK__DateDime__A426F253289D7407");
+            entity.HasKey(e => e.DateID).HasName("PK__DateDime__A426F253D3C63C50");
 
-            entity.ToTable("DateDimension");
-
-            entity.Property(e => e.DateId).HasColumnName("DateID");
             entity.Property(e => e.DayName).HasMaxLength(10);
         });
 
-        modelBuilder.Entity<District>(entity =>
+        modelBuilder.Entity<Districts>(entity =>
         {
-            entity.HasKey(e => e.DistrictId).HasName("PK__District__85FDA4A6831ABC43");
+            entity.HasKey(e => e.DistrictID).HasName("PK__District__85FDA4A63BF24E8A");
 
-            entity.Property(e => e.DistrictId).HasColumnName("DistrictID");
             entity.Property(e => e.DistrictName).HasMaxLength(20);
-        });
-
-        modelBuilder.Entity<Employee>(entity =>
-        {
-            entity.HasKey(e => e.EmployeeId).HasName("PK__Employee__7AD04FF172DCDE5D");
-
-            entity.HasIndex(e => e.EmployeeCode, "UQ_Employees_EmployeeCode").IsUnique();
-
-            entity.HasIndex(e => e.Account, "UQ__Employee__B0C3AC46E77487F7").IsUnique();
-
-            entity.Property(e => e.EmployeeId).HasColumnName("EmployeeID");
-            entity.Property(e => e.Account).HasMaxLength(50);
-            entity.Property(e => e.EmployeeCode)
-                .HasMaxLength(4000)
-                .HasComputedColumnSql("((N'Emp'+replicate(N'0',case when len(CONVERT([varchar](20),[EmployeeID]))<(5) then (5)-len(CONVERT([varchar](20),[EmployeeID])) else (0) end))+CONVERT([varchar](20),[EmployeeID]))", true);
-            entity.Property(e => e.Password).HasMaxLength(200);
-            entity.Property(e => e.RoleId).HasColumnName("RoleID");
-
-            entity.HasOne(d => d.Role).WithMany(p => p.Employees)
-                .HasForeignKey(d => d.RoleId)
-                .HasConstraintName("FK__Employees__RoleI__151B244E");
         });
 
         modelBuilder.Entity<EmployeeProfile>(entity =>
         {
-            entity.HasKey(e => e.ProfileId).HasName("PK__Employee__290C88847884C080");
+            entity.HasKey(e => e.EmployeeProfileID).HasName("PK__Employee__7CC01C3EA0B9E04D");
 
-            entity.ToTable("EmployeeProfile");
+            entity.HasIndex(e => e.EmployeeID, "UQ__Employee__7AD04FF047B12E87").IsUnique();
 
-            entity.HasIndex(e => e.ProfileCode, "UQ_EmployeeProfile_ProfileCode").IsUnique();
-
-            entity.HasIndex(e => e.EmployeeId, "UQ__Employee__7AD04FF0DF0ED38F").IsUnique();
-
-            entity.Property(e => e.ProfileId).HasColumnName("ProfileID");
             entity.Property(e => e.Address).HasMaxLength(200);
             entity.Property(e => e.Email)
                 .HasMaxLength(100)
                 .IsUnicode(false);
-            entity.Property(e => e.EmployeeId)
-                .IsRequired()
-                .HasColumnName("EmployeeID");
+            entity.Property(e => e.EmployeeID).IsRequired();
             entity.Property(e => e.EmployeeName).HasMaxLength(50);
-            entity.Property(e => e.Idnumber)
+            entity.Property(e => e.EmployeeProfileCode)
+                .HasMaxLength(20)
+                .IsUnicode(false);
+            entity.Property(e => e.IDNumber)
                 .HasMaxLength(10)
-                .IsUnicode(false)
-                .HasColumnName("IDNumber");
+                .IsUnicode(false);
             entity.Property(e => e.Phone)
                 .HasMaxLength(20)
                 .IsUnicode(false);
-            entity.Property(e => e.ProfileCode)
-                .HasMaxLength(4000)
-                .HasComputedColumnSql("((N'EmpPD'+replicate(N'0',case when len(CONVERT([varchar](20),[ProfileID]))<(5) then (5)-len(CONVERT([varchar](20),[ProfileID])) else (0) end))+CONVERT([varchar](20),[ProfileID]))", true);
 
             entity.HasOne(d => d.Employee).WithOne(p => p.EmployeeProfile)
-                .HasForeignKey<EmployeeProfile>(d => d.EmployeeId)
-                .HasConstraintName("FK__EmployeeP__Emplo__160F4887");
+                .HasForeignKey<EmployeeProfile>(d => d.EmployeeID)
+                .HasConstraintName("FK__EmployeeP__Emplo__282DF8C2");
         });
 
-        modelBuilder.Entity<EmployeeRole>(entity =>
+        modelBuilder.Entity<EmployeeRoles>(entity =>
         {
-            entity.HasKey(e => e.RoleId).HasName("PK__Employee__8AFACE3AEEA9CF7B");
+            entity.HasKey(e => e.RoleID).HasName("PK__Employee__8AFACE3AA240E365");
 
-            entity.Property(e => e.RoleId)
-                .ValueGeneratedNever()
-                .HasColumnName("RoleID");
+            entity.Property(e => e.RoleID).ValueGeneratedNever();
             entity.Property(e => e.RoleName).HasMaxLength(20);
         });
 
-        modelBuilder.Entity<Faq>(entity =>
+        modelBuilder.Entity<Employees>(entity =>
         {
-            entity.HasKey(e => e.Faqid).HasName("PK__FAQs__4B89D1E2280F8DA9");
+            entity.HasKey(e => e.EmployeeID).HasName("PK__Employee__7AD04FF1804EF882");
 
-            entity.ToTable("FAQs");
+            entity.HasIndex(e => e.Account, "UQ__Employee__B0C3AC463B045A6C").IsUnique();
 
-            entity.Property(e => e.Faqid).HasColumnName("FAQID");
-            entity.Property(e => e.CategoryId).HasColumnName("CategoryID");
-            entity.Property(e => e.Question).HasMaxLength(200);
+            entity.Property(e => e.Account).HasMaxLength(50);
+            entity.Property(e => e.EmployeeCode)
+                .HasMaxLength(20)
+                .IsUnicode(false);
+            entity.Property(e => e.Password).HasMaxLength(200);
 
-            entity.HasOne(d => d.Category).WithMany(p => p.Faqs)
-                .HasForeignKey(d => d.CategoryId)
-                .HasConstraintName("FK__FAQs__CategoryID__51300E55");
+            entity.HasOne(d => d.Role).WithMany(p => p.Employees)
+                .HasForeignKey(d => d.RoleID)
+                .HasConstraintName("FK__Employees__RoleI__29221CFB");
         });
 
-        modelBuilder.Entity<Faqcategory>(entity =>
+        modelBuilder.Entity<FAQCategorys>(entity =>
         {
-            entity.HasKey(e => e.CategoryId).HasName("PK__FAQCateg__19093A2BF4B93F6C");
+            entity.HasKey(e => e.CategoryID).HasName("PK__FAQCateg__19093A2BAD7796F5");
 
-            entity.ToTable("FAQCategorys");
-
-            entity.Property(e => e.CategoryId).HasColumnName("CategoryID");
             entity.Property(e => e.CategoryName).HasMaxLength(200);
         });
 
-        modelBuilder.Entity<Hotel>(entity =>
+        modelBuilder.Entity<FAQs>(entity =>
         {
-            entity.HasKey(e => e.HotelId).HasName("PK__Hotels__46023BBFEEDEC27E");
+            entity.HasKey(e => e.FAQID).HasName("PK__FAQs__4B89D1E24C3A6A93");
 
-            entity.Property(e => e.HotelId).HasColumnName("HotelID");
-            entity.Property(e => e.DistrictId).HasColumnName("DistrictID");
+            entity.Property(e => e.Question).HasMaxLength(200);
+
+            entity.HasOne(d => d.Category).WithMany(p => p.FAQs)
+                .HasForeignKey(d => d.CategoryID)
+                .HasConstraintName("FK__FAQs__CategoryID__2A164134");
+        });
+
+        modelBuilder.Entity<HotelKeywords>(entity =>
+        {
+            entity.HasNoKey();
+
+            entity.HasOne(d => d.Hotel).WithMany()
+                .HasForeignKey(d => d.HotelID)
+                .HasConstraintName("FK__HotelKeyw__Hotel__2B0A656D");
+
+            entity.HasOne(d => d.Keyword).WithMany()
+                .HasForeignKey(d => d.KeywordID)
+                .HasConstraintName("FK__HotelKeyw__Keywo__2BFE89A6");
+        });
+
+        modelBuilder.Entity<HotelPics>(entity =>
+        {
+            entity.HasNoKey();
+
+            entity.HasOne(d => d.Hotel).WithMany()
+                .HasForeignKey(d => d.HotelID)
+                .HasConstraintName("FK__HotelPics__Hotel__2CF2ADDF");
+        });
+
+        modelBuilder.Entity<Hotels>(entity =>
+        {
+            entity.HasKey(e => e.HotelID).HasName("PK__Hotels__46023BBF1005A475");
+
             entity.Property(e => e.HotelAddr).HasMaxLength(200);
+            entity.Property(e => e.HotelCode)
+                .HasMaxLength(20)
+                .IsUnicode(false);
             entity.Property(e => e.HotelLat).HasColumnType("numeric(9, 6)");
             entity.Property(e => e.HotelLng).HasColumnType("numeric(9, 6)");
             entity.Property(e => e.HotelName).HasMaxLength(200);
             entity.Property(e => e.Rating).HasColumnType("numeric(2, 1)");
-            entity.Property(e => e.RegionId).HasColumnName("RegionID");
 
             entity.HasOne(d => d.District).WithMany(p => p.Hotels)
-                .HasForeignKey(d => d.DistrictId)
-                .HasConstraintName("FK__Hotels__District__1EA48E88");
+                .HasForeignKey(d => d.DistrictID)
+                .HasConstraintName("FK__Hotels__District__2DE6D218");
 
             entity.HasOne(d => d.Region).WithMany(p => p.Hotels)
-                .HasForeignKey(d => d.RegionId)
-                .HasConstraintName("FK__Hotels__RegionID__2DE6D218");
+                .HasForeignKey(d => d.RegionID)
+                .HasConstraintName("FK_Hotels_Regions");
         });
 
-        modelBuilder.Entity<HotelKeyword>(entity =>
+        modelBuilder.Entity<Keywords>(entity =>
+        {
+            entity.HasKey(e => e.KeywordID).HasName("PK__Keywords__37C135C138B67486");
+
+            entity.Property(e => e.KeywordID).ValueGeneratedNever();
+            entity.Property(e => e.Keyword).HasMaxLength(15);
+        });
+
+        modelBuilder.Entity<LocationKeywords>(entity =>
         {
             entity.HasNoKey();
-
-            entity.Property(e => e.HotelId).HasColumnName("HotelID");
-            entity.Property(e => e.KeywordId).HasColumnName("KeywordID");
-
-            entity.HasOne(d => d.Hotel).WithMany()
-                .HasForeignKey(d => d.HotelId)
-                .HasConstraintName("FK__HotelKeyw__Hotel__1F98B2C1");
 
             entity.HasOne(d => d.Keyword).WithMany()
-                .HasForeignKey(d => d.KeywordId)
-                .HasConstraintName("FK__HotelKeyw__Keywo__3D2915A8");
+                .HasForeignKey(d => d.KeywordID)
+                .HasConstraintName("FK__LocationK__Keywo__2FCF1A8A");
+
+            entity.HasOne(d => d.Location).WithMany()
+                .HasForeignKey(d => d.LocationID)
+                .HasConstraintName("FK__LocationK__Locat__30C33EC3");
         });
 
-        modelBuilder.Entity<HotelPic>(entity =>
+        modelBuilder.Entity<LocationPics>(entity =>
         {
             entity.HasNoKey();
 
-            entity.Property(e => e.HotelId).HasColumnName("HotelID");
-
-            entity.HasOne(d => d.Hotel).WithMany()
-                .HasForeignKey(d => d.HotelId)
-                .HasConstraintName("FK__HotelPics__Hotel__1DB06A4F");
+            entity.HasOne(d => d.Location).WithMany()
+                .HasForeignKey(d => d.LocationID)
+                .HasConstraintName("FK__LocationP__Locat__31B762FC");
         });
 
-        modelBuilder.Entity<Keyword>(entity =>
+        modelBuilder.Entity<Locations>(entity =>
         {
-            entity.HasKey(e => e.KeywordId).HasName("PK__Keywords__37C135C1711EEC05");
+            entity.HasKey(e => e.LocationID).HasName("PK__Location__E7FEA4777BCBA51B");
 
-            entity.Property(e => e.KeywordId)
-                .ValueGeneratedNever()
-                .HasColumnName("KeywordID");
-            entity.Property(e => e.Keyword1)
-                .HasMaxLength(15)
-                .HasColumnName("Keyword");
-        });
-
-        modelBuilder.Entity<Location>(entity =>
-        {
-            entity.HasKey(e => e.LocationId).HasName("PK__Location__E7FEA477236E439F");
-
-            entity.Property(e => e.LocationId).HasColumnName("LocationID");
-            entity.Property(e => e.DistrictId).HasColumnName("DistrictID");
             entity.Property(e => e.LocationAddr).HasMaxLength(200);
+            entity.Property(e => e.LocationCode)
+                .HasMaxLength(20)
+                .IsUnicode(false);
             entity.Property(e => e.LocationLat).HasColumnType("numeric(9, 6)");
             entity.Property(e => e.LocationLng).HasColumnType("numeric(9, 6)");
             entity.Property(e => e.LocationName).HasMaxLength(50);
             entity.Property(e => e.Rating).HasColumnType("numeric(2, 1)");
-            entity.Property(e => e.RegionId).HasColumnName("RegionID");
 
             entity.HasOne(d => d.District).WithMany(p => p.Locations)
-                .HasForeignKey(d => d.DistrictId)
-                .HasConstraintName("FK__Locations__Distr__2739D489");
+                .HasForeignKey(d => d.DistrictID)
+                .HasConstraintName("FK__Locations__Distr__32AB8735");
 
             entity.HasOne(d => d.Region).WithMany(p => p.Locations)
-                .HasForeignKey(d => d.RegionId)
-                .HasConstraintName("FK__Locations__Regio__2BFE89A6");
+                .HasForeignKey(d => d.RegionID)
+                .HasConstraintName("FK_Locations_Regions");
         });
 
-        modelBuilder.Entity<LocationKeyword>(entity =>
+        modelBuilder.Entity<NewsPics>(entity =>
         {
             entity.HasNoKey();
-
-            entity.Property(e => e.KeywordId).HasColumnName("KeywordID");
-            entity.Property(e => e.LocationId).HasColumnName("LocationID");
-
-            entity.HasOne(d => d.Keyword).WithMany()
-                .HasForeignKey(d => d.KeywordId)
-                .HasConstraintName("FK__LocationK__Keywo__3E1D39E1");
-
-            entity.HasOne(d => d.Location).WithMany()
-                .HasForeignKey(d => d.LocationId)
-                .HasConstraintName("FK__LocationK__Locat__282DF8C2");
-        });
-
-        modelBuilder.Entity<LocationPic>(entity =>
-        {
-            entity.HasNoKey();
-
-            entity.Property(e => e.LocationId).HasColumnName("LocationID");
-
-            entity.HasOne(d => d.Location).WithMany()
-                .HasForeignKey(d => d.LocationId)
-                .HasConstraintName("FK__LocationP__Locat__2645B050");
-        });
-
-        modelBuilder.Entity<NewsPic>(entity =>
-        {
-            entity.HasNoKey();
-
-            entity.Property(e => e.NewsId).HasColumnName("NewsID");
-            entity.Property(e => e.NewsPic1).HasColumnName("NewsPic");
 
             entity.HasOne(d => d.News).WithMany()
-                .HasForeignKey(d => d.NewsId)
-                .HasConstraintName("FK__NewsPics__NewsID__55F4C372");
+                .HasForeignKey(d => d.NewsID)
+                .HasConstraintName("FK__NewsPics__NewsID__3493CFA7");
         });
 
         modelBuilder.Entity<NewsTable>(entity =>
         {
-            entity.HasKey(e => e.NewsId).HasName("PK__NewsTabl__954EBDD3EBDB7D80");
+            entity.HasKey(e => e.NewsID).HasName("PK__NewsTabl__954EBDD3A419A542");
 
-            entity.ToTable("NewsTable");
-
-            entity.Property(e => e.NewsId).HasColumnName("NewsID");
-            entity.Property(e => e.EmployeeId).HasColumnName("EmployeeID");
             entity.Property(e => e.NewsTitle).HasMaxLength(200);
 
-            entity.HasOne(d => d.Employee).WithMany(p => p.NewsTables)
-                .HasPrincipalKey(p => p.EmployeeId)
-                .HasForeignKey(d => d.EmployeeId)
-                .HasConstraintName("FK__NewsTable__Emplo__55009F39");
+            entity.HasOne(d => d.Employee).WithMany(p => p.NewsTable)
+                .HasPrincipalKey(p => p.EmployeeID)
+                .HasForeignKey(d => d.EmployeeID)
+                .HasConstraintName("FK__NewsTable__Emplo__3587F3E0");
         });
 
         modelBuilder.Entity<OrderPaymentInfo>(entity =>
         {
-            entity.HasKey(e => e.PaymentId).HasName("PK__OrderPay__9B556A58A74D4FCD");
+            entity.HasKey(e => e.PaymentID).HasName("PK__OrderPay__9B556A58EDC4925A");
 
-            entity.ToTable("OrderPaymentInfo");
+            entity.HasOne(d => d.Order).WithMany(p => p.OrderPaymentInfo)
+                .HasForeignKey(d => d.OrderID)
+                .HasConstraintName("FK__OrderPaym__Order__367C1819");
 
-            entity.Property(e => e.PaymentId).HasColumnName("PaymentID");
-            entity.Property(e => e.OrderId).HasColumnName("OrderID");
-            entity.Property(e => e.PaymentStatusId).HasColumnName("PaymentStatusID");
-
-            entity.HasOne(d => d.Order).WithMany(p => p.OrderPaymentInfos)
-                .HasForeignKey(d => d.OrderId)
-                .HasConstraintName("FK__OrderPaym__Order__498EEC8D");
-
-            entity.HasOne(d => d.PaymentStatus).WithMany(p => p.OrderPaymentInfos)
-                .HasForeignKey(d => d.PaymentStatusId)
-                .HasConstraintName("FK__OrderPaym__Payme__489AC854");
+            entity.HasOne(d => d.PaymentStatus).WithMany(p => p.OrderPaymentInfo)
+                .HasForeignKey(d => d.PaymentStatusID)
+                .HasConstraintName("FK__OrderPaym__Payme__37703C52");
         });
 
         modelBuilder.Entity<OrderStatus>(entity =>
         {
-            entity.HasKey(e => e.OrderStatusId).HasName("PK__OrderSta__BC674F41E5AA8B7D");
+            entity.HasKey(e => e.OrderStatusID).HasName("PK__OrderSta__BC674F410981CD78");
 
-            entity.ToTable("OrderStatus");
-
-            entity.Property(e => e.OrderStatusId).HasColumnName("OrderStatusID");
             entity.Property(e => e.StatusDesc).HasMaxLength(50);
         });
 
         modelBuilder.Entity<PaymentStatus>(entity =>
         {
-            entity.HasKey(e => e.PayMentStatusId).HasName("PK__PaymentS__F177127FB5B95734");
+            entity.HasKey(e => e.PayMentStatusID).HasName("PK__PaymentS__F177127F257E414E");
 
-            entity.ToTable("PaymentStatus");
-
-            entity.Property(e => e.PayMentStatusId).HasColumnName("PayMentStatusID");
             entity.Property(e => e.StatusDesc).HasMaxLength(50);
-        });
-
-        modelBuilder.Entity<Product>(entity =>
-        {
-            entity.HasKey(e => e.ProductId).HasName("PK__Products__B40CC6EDF3B48DFB");
-
-            entity.Property(e => e.ProductId).HasColumnName("ProductID");
-            entity.Property(e => e.ProductDesc).HasMaxLength(200);
-            entity.Property(e => e.ProductName).HasMaxLength(150);
-            entity.Property(e => e.ProductNote).HasMaxLength(200);
-            entity.Property(e => e.RegionId).HasColumnName("RegionID");
-
-            entity.HasOne(d => d.Region).WithMany(p => p.Products)
-                .HasForeignKey(d => d.RegionId)
-                .HasConstraintName("FK__Products__Region__2B0A656D");
         });
 
         modelBuilder.Entity<ProductAnalysis>(entity =>
         {
-            entity
-                .HasNoKey()
-                .ToTable("ProductAnalysis");
-
-            entity.Property(e => e.ProductId).HasColumnName("ProductID");
+            entity.HasNoKey();
 
             entity.HasOne(d => d.Product).WithMany()
-                .HasForeignKey(d => d.ProductId)
-                .HasConstraintName("FK__ProductAn__Produ__1CBC4616");
+                .HasForeignKey(d => d.ProductID)
+                .HasConstraintName("FK__ProductAn__Produ__3864608B");
         });
 
-        modelBuilder.Entity<ProductPic>(entity =>
+        modelBuilder.Entity<ProductPics>(entity =>
         {
             entity.HasNoKey();
 
-            entity.Property(e => e.ProductId).HasColumnName("ProductID");
-
             entity.HasOne(d => d.Product).WithMany()
-                .HasForeignKey(d => d.ProductId)
-                .HasConstraintName("FK__ProductPi__Produ__1BC821DD");
+                .HasForeignKey(d => d.ProductID)
+                .HasConstraintName("FK__ProductPi__Produ__395884C4");
         });
 
-        modelBuilder.Entity<ProductsHotel>(entity =>
+        modelBuilder.Entity<Products>(entity =>
         {
-            entity
-                .HasNoKey()
-                .ToTable("Products_Hotels");
+            entity.HasKey(e => e.ProductID).HasName("PK__Products__B40CC6EDDACA8D2D");
 
-            entity.Property(e => e.HotelId).HasColumnName("HotelID");
-            entity.Property(e => e.ProductId).HasColumnName("ProductID");
+            entity.Property(e => e.ProductCode)
+                .HasMaxLength(20)
+                .IsUnicode(false);
+            entity.Property(e => e.ProductDesc).HasMaxLength(200);
+            entity.Property(e => e.ProductName).HasMaxLength(150);
+            entity.Property(e => e.ProductNote).HasMaxLength(200);
+
+            entity.HasOne(d => d.Region).WithMany(p => p.Products)
+                .HasForeignKey(d => d.RegionID)
+                .HasConstraintName("FK_Products_Regions");
+        });
+
+        modelBuilder.Entity<Products_Hotels>(entity =>
+        {
+            entity.HasNoKey();
 
             entity.HasOne(d => d.Hotel).WithMany()
-                .HasForeignKey(d => d.HotelId)
-                .HasConstraintName("FK__Products___Hotel__1AD3FDA4");
+                .HasForeignKey(d => d.HotelID)
+                .HasConstraintName("FK__Products___Hotel__3B40CD36");
 
             entity.HasOne(d => d.Product).WithMany()
-                .HasForeignKey(d => d.ProductId)
-                .HasConstraintName("FK__Products___Produ__19DFD96B");
+                .HasForeignKey(d => d.ProductID)
+                .HasConstraintName("FK__Products___Produ__3C34F16F");
         });
 
-        modelBuilder.Entity<ProductsLocation>(entity =>
+        modelBuilder.Entity<Products_Locations>(entity =>
         {
-            entity
-                .HasNoKey()
-                .ToTable("Products_Locations");
-
-            entity.Property(e => e.LocationId).HasColumnName("LocationID");
-            entity.Property(e => e.ProductId).HasColumnName("ProductID");
+            entity.HasNoKey();
 
             entity.HasOne(d => d.Location).WithMany()
-                .HasForeignKey(d => d.LocationId)
-                .HasConstraintName("FK__Products___Locat__2A164134");
+                .HasForeignKey(d => d.LocationID)
+                .HasConstraintName("FK__Products___Locat__3D2915A8");
 
             entity.HasOne(d => d.Product).WithMany()
-                .HasForeignKey(d => d.ProductId)
-                .HasConstraintName("FK__Products___Produ__29221CFB");
+                .HasForeignKey(d => d.ProductID)
+                .HasConstraintName("FK__Products___Produ__3E1D39E1");
         });
 
-        modelBuilder.Entity<ProductsPromotion>(entity =>
+        modelBuilder.Entity<Products_Promotions>(entity =>
         {
-            entity
-                .HasNoKey()
-                .ToTable("Products_Promotions");
-
-            entity.Property(e => e.ProductId).HasColumnName("ProductID");
-            entity.Property(e => e.PromoId).HasColumnName("PromoID");
+            entity.HasNoKey();
 
             entity.HasOne(d => d.Product).WithMany()
-                .HasForeignKey(d => d.ProductId)
-                .HasConstraintName("FK__Products___Produ__540C7B00");
+                .HasForeignKey(d => d.ProductID)
+                .HasConstraintName("FK__Products___Produ__3F115E1A");
 
             entity.HasOne(d => d.Promo).WithMany()
-                .HasForeignKey(d => d.PromoId)
-                .HasConstraintName("FK__Products___Promo__531856C7");
+                .HasForeignKey(d => d.PromoID)
+                .HasConstraintName("FK__Products___Promo__40058253");
         });
 
-        modelBuilder.Entity<ProductsRestaurant>(entity =>
+        modelBuilder.Entity<Products_Restaurants>(entity =>
         {
-            entity
-                .HasNoKey()
-                .ToTable("Products_Restaurants");
-
-            entity.Property(e => e.ProductId).HasColumnName("ProductID");
-            entity.Property(e => e.RestaurantId).HasColumnName("RestaurantID");
+            entity.HasNoKey();
 
             entity.HasOne(d => d.Product).WithMany()
-                .HasForeignKey(d => d.ProductId)
-                .HasConstraintName("FK__Products___Produ__32AB8735");
+                .HasForeignKey(d => d.ProductID)
+                .HasConstraintName("FK__Products___Produ__40F9A68C");
 
             entity.HasOne(d => d.Restaurant).WithMany()
-                .HasForeignKey(d => d.RestaurantId)
-                .HasConstraintName("FK__Products___Resta__339FAB6E");
+                .HasForeignKey(d => d.RestaurantID)
+                .HasConstraintName("FK__Products___Resta__42E1EEFE");
         });
 
-        modelBuilder.Entity<ProductsTransportation>(entity =>
+        modelBuilder.Entity<Products_Transportations>(entity =>
         {
-            entity
-                .HasNoKey()
-                .ToTable("Products_Transportations");
-
-            entity.Property(e => e.ProductId).HasColumnName("ProductID");
-            entity.Property(e => e.TransportId).HasColumnName("TransportID");
+            entity.HasNoKey();
 
             entity.HasOne(d => d.Product).WithMany()
-                .HasForeignKey(d => d.ProductId)
-                .HasConstraintName("FK__Products___Produ__2180FB33");
+                .HasForeignKey(d => d.ProductID)
+                .HasConstraintName("FK__Products___Produ__44CA3770");
 
             entity.HasOne(d => d.Transport).WithMany()
-                .HasForeignKey(d => d.TransportId)
-                .HasConstraintName("FK__Products___Trans__245D67DE");
+                .HasForeignKey(d => d.TransportID)
+                .HasConstraintName("FK__Products___Trans__45BE5BA9");
         });
 
-        modelBuilder.Entity<Promotion>(entity =>
+        modelBuilder.Entity<Promotions>(entity =>
         {
-            entity.HasKey(e => e.PromoId).HasName("PK__Promotio__33D334D0CFE2D6D4");
+            entity.HasKey(e => e.PromoID).HasName("PK__Promotio__33D334D0D8C5EB2C");
 
-            entity.Property(e => e.PromoId).HasColumnName("PromoID");
             entity.Property(e => e.DiscountValue).HasColumnType("decimal(12, 2)");
             entity.Property(e => e.PromoName).HasMaxLength(200);
         });
 
-        modelBuilder.Entity<Region>(entity =>
+        modelBuilder.Entity<Regions>(entity =>
         {
-            entity.HasKey(e => e.RegionId).HasName("PK__Regions__ACD84443C77B3F0E");
+            entity.HasKey(e => e.RegionID);
 
-            entity.Property(e => e.RegionId).HasColumnName("RegionID");
+            entity.Property(e => e.RegionID).ValueGeneratedNever();
             entity.Property(e => e.RegionName).HasMaxLength(10);
         });
 
-        modelBuilder.Entity<Restaurant>(entity =>
+        modelBuilder.Entity<RestaurantKeywords>(entity =>
         {
-            entity.HasKey(e => e.RestaurantId).HasName("PK__Restaura__87454CB5115F360F");
+            entity.HasNoKey();
 
-            entity.Property(e => e.RestaurantId).HasColumnName("RestaurantID");
-            entity.Property(e => e.DistrictId).HasColumnName("DistrictID");
+            entity.HasOne(d => d.Keyword).WithMany()
+                .HasForeignKey(d => d.KeywordID)
+                .HasConstraintName("FK__Restauran__Keywo__46B27FE2");
+
+            entity.HasOne(d => d.Restaurant).WithMany()
+                .HasForeignKey(d => d.RestaurantID)
+                .HasConstraintName("FK__Restauran__Resta__47A6A41B");
+        });
+
+        modelBuilder.Entity<RestaurantPics>(entity =>
+        {
+            entity.HasNoKey();
+
+            entity.HasOne(d => d.Restaurant).WithMany()
+                .HasForeignKey(d => d.RestaurantID)
+                .HasConstraintName("FK__Restauran__Resta__489AC854");
+        });
+
+        modelBuilder.Entity<Restaurants>(entity =>
+        {
+            entity.HasKey(e => e.RestaurantID).HasName("PK__Restaura__87454CB50407FEEF");
+
             entity.Property(e => e.Rating).HasColumnType("numeric(2, 1)");
-            entity.Property(e => e.RegionId).HasColumnName("RegionID");
             entity.Property(e => e.RestaurantAddr).HasMaxLength(200);
             entity.Property(e => e.RestaurantLat).HasColumnType("numeric(9, 6)");
             entity.Property(e => e.RestaurantLng).HasColumnType("numeric(9, 6)");
             entity.Property(e => e.RestaurantName).HasMaxLength(50);
 
             entity.HasOne(d => d.District).WithMany(p => p.Restaurants)
-                .HasForeignKey(d => d.DistrictId)
-                .HasConstraintName("FK__Restauran__Distr__30C33EC3");
+                .HasForeignKey(d => d.DistrictID)
+                .HasConstraintName("FK__Restauran__Distr__498EEC8D");
 
             entity.HasOne(d => d.Region).WithMany(p => p.Restaurants)
-                .HasForeignKey(d => d.RegionId)
-                .HasConstraintName("FK__Restauran__Regio__2CF2ADDF");
+                .HasForeignKey(d => d.RegionID)
+                .HasConstraintName("FK_Restaurants_Regions");
         });
 
-        modelBuilder.Entity<RestaurantKeyword>(entity =>
+        modelBuilder.Entity<SemiSelfProducts>(entity =>
         {
-            entity.HasNoKey();
+            entity.HasKey(e => e.ProductID).HasName("PK__SemiSelf__B40CC6ED1BE67600");
 
-            entity.Property(e => e.KeywordId).HasColumnName("KeywordID");
-            entity.Property(e => e.RestaurantId).HasColumnName("RestaurantID");
-
-            entity.HasOne(d => d.Keyword).WithMany()
-                .HasForeignKey(d => d.KeywordId)
-                .HasConstraintName("FK__Restauran__Keywo__3C34F16F");
-
-            entity.HasOne(d => d.Restaurant).WithMany()
-                .HasForeignKey(d => d.RestaurantId)
-                .HasConstraintName("FK__Restauran__Resta__2EDAF651");
-        });
-
-        modelBuilder.Entity<RestaurantPic>(entity =>
-        {
-            entity.HasNoKey();
-
-            entity.Property(e => e.RestaurantId).HasColumnName("RestaurantID");
-
-            entity.HasOne(d => d.Restaurant).WithMany()
-                .HasForeignKey(d => d.RestaurantId)
-                .HasConstraintName("FK__Restauran__Resta__2FCF1A8A");
-        });
-
-        modelBuilder.Entity<SemiHotel>(entity =>
-        {
-            entity
-                .HasNoKey()
-                .ToTable("Semi_Hotels");
-
-            entity.Property(e => e.HotelId).HasColumnName("HotelID");
-            entity.Property(e => e.ProductId).HasColumnName("ProductID");
-
-            entity.HasOne(d => d.Hotel).WithMany()
-                .HasForeignKey(d => d.HotelId)
-                .HasConstraintName("FK__Semi_Hote__Hotel__367C1819");
-
-            entity.HasOne(d => d.Product).WithMany()
-                .HasForeignKey(d => d.ProductId)
-                .HasConstraintName("FK__Semi_Hote__Produ__37703C52");
-        });
-
-        modelBuilder.Entity<SemiLocation>(entity =>
-        {
-            entity
-                .HasNoKey()
-                .ToTable("Semi_Locations");
-
-            entity.Property(e => e.LocationId).HasColumnName("LocationID");
-            entity.Property(e => e.ProductId).HasColumnName("ProductID");
-
-            entity.HasOne(d => d.Location).WithMany()
-                .HasForeignKey(d => d.LocationId)
-                .HasConstraintName("FK__Semi_Loca__Locat__3493CFA7");
-
-            entity.HasOne(d => d.Product).WithMany()
-                .HasForeignKey(d => d.ProductId)
-                .HasConstraintName("FK__Semi_Loca__Produ__3587F3E0");
-        });
-
-        modelBuilder.Entity<SemiSelfProduct>(entity =>
-        {
-            entity.HasKey(e => e.ProductId).HasName("PK__SemiSelf__B40CC6EDD5768615");
-
-            entity.Property(e => e.ProductId).HasColumnName("ProductID");
+            entity.Property(e => e.ProductCode)
+                .HasMaxLength(20)
+                .IsUnicode(false);
             entity.Property(e => e.ProjectName).HasMaxLength(100);
         });
 
-        modelBuilder.Entity<SemiTransportation>(entity =>
+        modelBuilder.Entity<Semi_Hotels>(entity =>
         {
-            entity
-                .HasNoKey()
-                .ToTable("Semi_Transportations");
+            entity.HasNoKey();
 
-            entity.Property(e => e.ProductId).HasColumnName("ProductID");
-            entity.Property(e => e.TransportId).HasColumnName("TransportID");
+            entity.HasOne(d => d.Hotel).WithMany()
+                .HasForeignKey(d => d.HotelID)
+                .HasConstraintName("FK__Semi_Hote__Hotel__4B7734FF");
 
             entity.HasOne(d => d.Product).WithMany()
-                .HasForeignKey(d => d.ProductId)
-                .HasConstraintName("FK__Semi_Tran__Produ__395884C4");
+                .HasForeignKey(d => d.ProductID)
+                .HasConstraintName("FK__Semi_Hote__Produ__4C6B5938");
+        });
+
+        modelBuilder.Entity<Semi_Locations>(entity =>
+        {
+            entity.HasNoKey();
+
+            entity.HasOne(d => d.Location).WithMany()
+                .HasForeignKey(d => d.LocationID)
+                .HasConstraintName("FK__Semi_Loca__Locat__4D5F7D71");
+
+            entity.HasOne(d => d.Product).WithMany()
+                .HasForeignKey(d => d.ProductID)
+                .HasConstraintName("FK__Semi_Loca__Produ__4E53A1AA");
+        });
+
+        modelBuilder.Entity<Semi_Transportations>(entity =>
+        {
+            entity.HasNoKey();
+
+            entity.HasOne(d => d.Product).WithMany()
+                .HasForeignKey(d => d.ProductID)
+                .HasConstraintName("FK__Semi_Tran__Produ__4F47C5E3");
 
             entity.HasOne(d => d.Transport).WithMany()
-                .HasForeignKey(d => d.TransportId)
-                .HasConstraintName("FK__Semi_Tran__Trans__3864608B");
+                .HasForeignKey(d => d.TransportID)
+                .HasConstraintName("FK__Semi_Tran__Trans__503BEA1C");
         });
 
         modelBuilder.Entity<SupportAnalysis>(entity =>
         {
-            entity
-                .HasNoKey()
-                .ToTable("SupportAnalysis");
+            entity.HasNoKey();
 
-            entity.Property(e => e.DateId).HasColumnName("DateID");
-            entity.Property(e => e.TicketId).HasColumnName("TicketID");
             entity.Property(e => e.TopCategory).HasMaxLength(200);
 
             entity.HasOne(d => d.Date).WithMany()
-                .HasForeignKey(d => d.DateId)
-                .HasConstraintName("FK__SupportAn__DateI__57DD0BE4");
+                .HasForeignKey(d => d.DateID)
+                .HasConstraintName("FK__SupportAn__DateI__51300E55");
 
             entity.HasOne(d => d.Ticket).WithMany()
-                .HasForeignKey(d => d.TicketId)
-                .HasConstraintName("FK__SupportAn__Ticke__56E8E7AB");
+                .HasForeignKey(d => d.TicketID)
+                .HasConstraintName("FK__SupportAn__Ticke__5224328E");
         });
 
         modelBuilder.Entity<TicketPriority>(entity =>
         {
-            entity.HasKey(e => e.PriorityId).HasName("PK__TicketPr__D0A3D0DE8CA44994");
+            entity.HasKey(e => e.PriorityID).HasName("PK__TicketPr__D0A3D0DE6273C0C0");
 
-            entity.ToTable("TicketPriority");
-
-            entity.Property(e => e.PriorityId).HasColumnName("PriorityID");
             entity.Property(e => e.PriorityDesc).HasMaxLength(100);
         });
 
         modelBuilder.Entity<TicketStatus>(entity =>
         {
-            entity.HasKey(e => e.StatusId).HasName("PK__TicketSt__C8EE2043B1BA9CF2");
+            entity.HasKey(e => e.StatusID).HasName("PK__TicketSt__C8EE2043F7460F01");
 
-            entity.ToTable("TicketStatus");
-
-            entity.Property(e => e.StatusId).HasColumnName("StatusID");
             entity.Property(e => e.StatusDesc).HasMaxLength(100);
         });
 
-        modelBuilder.Entity<TicketType>(entity =>
+        modelBuilder.Entity<TicketTypes>(entity =>
         {
-            entity.HasKey(e => e.TicketTypeId).HasName("PK__TicketTy__6CD684519F2882C9");
+            entity.HasKey(e => e.TicketTypeID).HasName("PK__TicketTy__6CD6845185DEFCB2");
 
-            entity.Property(e => e.TicketTypeId).HasColumnName("TicketTypeID");
             entity.Property(e => e.TicketTypeName).HasMaxLength(200);
         });
 
-        modelBuilder.Entity<TransportKeyword>(entity =>
+        modelBuilder.Entity<TransportKeywords>(entity =>
         {
             entity.HasNoKey();
-
-            entity.Property(e => e.KeywordId).HasColumnName("KeywordID");
-            entity.Property(e => e.TransportId).HasColumnName("TransportID");
 
             entity.HasOne(d => d.Keyword).WithMany()
-                .HasForeignKey(d => d.KeywordId)
-                .HasConstraintName("FK__Transport__Keywo__3F115E1A");
+                .HasForeignKey(d => d.KeywordID)
+                .HasConstraintName("FK__Transport__Keywo__531856C7");
 
             entity.HasOne(d => d.Transport).WithMany()
-                .HasForeignKey(d => d.TransportId)
-                .HasConstraintName("FK__Transport__Trans__22751F6C");
+                .HasForeignKey(d => d.TransportID)
+                .HasConstraintName("FK__Transport__Trans__540C7B00");
         });
 
-        modelBuilder.Entity<TransportPic>(entity =>
+        modelBuilder.Entity<TransportPics>(entity =>
         {
             entity.HasNoKey();
 
-            entity.Property(e => e.TransportId).HasColumnName("TransportID");
-
             entity.HasOne(d => d.Transport).WithMany()
-                .HasForeignKey(d => d.TransportId)
-                .HasConstraintName("FK__Transport__Trans__236943A5");
+                .HasForeignKey(d => d.TransportID)
+                .HasConstraintName("FK__Transport__Trans__55009F39");
         });
 
-        modelBuilder.Entity<Transportation>(entity =>
+        modelBuilder.Entity<Transportations>(entity =>
         {
-            entity.HasKey(e => e.TransportId).HasName("PK__Transpor__19E9A17D4EBAE12B");
+            entity.HasKey(e => e.TransportID).HasName("PK__Transpor__19E9A17DE87E642A");
 
-            entity.Property(e => e.TransportId).HasColumnName("TransportID");
             entity.Property(e => e.Rating).HasColumnType("numeric(2, 1)");
+            entity.Property(e => e.TransportCode)
+                .HasMaxLength(20)
+                .IsUnicode(false);
             entity.Property(e => e.TransportName).HasMaxLength(30);
         });
 
-        modelBuilder.Entity<TripProjectDetail>(entity =>
+        modelBuilder.Entity<TripProjectDetails>(entity =>
         {
             entity.HasNoKey();
 
-            entity.Property(e => e.HotelId).HasColumnName("HotelID");
-            entity.Property(e => e.LocationId).HasColumnName("LocationID");
-            entity.Property(e => e.ProjectId).HasColumnName("ProjectID");
-            entity.Property(e => e.RestaurantId).HasColumnName("RestaurantID");
-            entity.Property(e => e.TransportId).HasColumnName("TransportID");
             entity.Property(e => e.TripType).HasMaxLength(50);
 
             entity.HasOne(d => d.Hotel).WithMany()
-                .HasForeignKey(d => d.HotelId)
-                .HasConstraintName("FK__TripProje__Hotel__208CD6FA");
+                .HasForeignKey(d => d.HotelID)
+                .HasConstraintName("FK__TripProje__Hotel__55F4C372");
 
             entity.HasOne(d => d.Location).WithMany()
-                .HasForeignKey(d => d.LocationId)
-                .HasConstraintName("FK__TripProje__Locat__25518C17");
+                .HasForeignKey(d => d.LocationID)
+                .HasConstraintName("FK__TripProje__Locat__56E8E7AB");
 
             entity.HasOne(d => d.Project).WithMany()
-                .HasForeignKey(d => d.ProjectId)
-                .HasConstraintName("FK__TripProje__Proje__3A4CA8FD");
+                .HasForeignKey(d => d.ProjectID)
+                .HasConstraintName("FK__TripProje__Proje__57DD0BE4");
 
             entity.HasOne(d => d.Restaurant).WithMany()
-                .HasForeignKey(d => d.RestaurantId)
-                .HasConstraintName("FK__TripProje__Resta__31B762FC");
+                .HasForeignKey(d => d.RestaurantID)
+                .HasConstraintName("FK__TripProje__Resta__58D1301D");
 
             entity.HasOne(d => d.Transport).WithMany()
-                .HasForeignKey(d => d.TransportId)
-                .HasConstraintName("FK__TripProje__Trans__3B40CD36");
+                .HasForeignKey(d => d.TransportID)
+                .HasConstraintName("FK__TripProje__Trans__59C55456");
         });
 
         OnModelCreatingPartial(modelBuilder);
