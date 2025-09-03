@@ -10,6 +10,7 @@ namespace Cat_Paw_Footprint.Data
 		}
 		public DbSet<Models.Employee> Employees { get; set; } 
 		public DbSet<Models.EmployeeRole> EmployeeRoles { get; set; } 
+		public DbSet<Models.EmployeeProfile> EmployeeProfiles { get; set; }
 		protected override void OnModelCreating(ModelBuilder modelBuilder)
 		{
 			modelBuilder.Entity<Employee>(entity =>
@@ -20,6 +21,10 @@ namespace Cat_Paw_Footprint.Data
 			modelBuilder.Entity<EmployeeRole>(entity =>
 			{
 				entity.HasKey(e => e.RoleId);
+			});
+			modelBuilder.Entity<EmployeeProfile>(entity =>
+			{
+				entity.HasKey(e => e.ProfileId);
 			});
 		}
 
