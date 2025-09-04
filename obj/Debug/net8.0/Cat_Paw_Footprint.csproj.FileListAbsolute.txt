@@ -329,7 +329,6 @@ C:\Users\user\Desktop\MVC\test\Cat_Paw_Footprint\obj\Debug\net8.0\Cat_Paw_Footpr
 C:\Users\user\Desktop\MVC\test\Cat_Paw_Footprint\obj\Debug\net8.0\rjimswa.dswa.cache.json
 C:\Users\user\Desktop\MVC\test\Cat_Paw_Footprint\obj\Debug\net8.0\rjsmrazor.dswa.cache.json
 C:\Users\user\Desktop\MVC\test\Cat_Paw_Footprint\obj\Debug\net8.0\rjsmcshtml.dswa.cache.json
-C:\Users\user\Desktop\MVC\test\Cat_Paw_Footprint\obj\Debug\net8.0\scopedcss\Views\Shared\_Layout.cshtml.rz.scp.css
 C:\Users\user\Desktop\MVC\test\Cat_Paw_Footprint\obj\Debug\net8.0\scopedcss\bundle\Cat_Paw_Footprint.styles.css
 C:\Users\user\Desktop\MVC\test\Cat_Paw_Footprint\obj\Debug\net8.0\scopedcss\projectbundle\Cat_Paw_Footprint.bundle.scp.css
 C:\Users\user\Desktop\MVC\test\Cat_Paw_Footprint\obj\Debug\net8.0\staticwebassets.build.json
@@ -343,3 +342,4 @@ C:\Users\user\Desktop\MVC\test\Cat_Paw_Footprint\obj\Debug\net8.0\refint\Cat_Paw
 C:\Users\user\Desktop\MVC\test\Cat_Paw_Footprint\obj\Debug\net8.0\Cat_Paw_Footprint.pdb
 C:\Users\user\Desktop\MVC\test\Cat_Paw_Footprint\obj\Debug\net8.0\Cat_Paw_Footprint.genruntimeconfig.cache
 C:\Users\user\Desktop\MVC\test\Cat_Paw_Footprint\obj\Debug\net8.0\ref\Cat_Paw_Footprint.dll
+C:\Users\user\Desktop\MVC\test\Cat_Paw_Footprint\obj\Debug\net8.0\scopedcss\Views\Shared\test\_Layout.cshtml.rz.scp.css
