@@ -1,3 +1,5 @@
+using Cat_Paw_Footprint.Areas.Employee.Repositories;
+using Cat_Paw_Footprint.Areas.Employee.Services;
 using Cat_Paw_Footprint.Data;
 using Cat_Paw_Footprint.Models;
 using Microsoft.AspNetCore.Identity;
@@ -30,6 +32,9 @@ namespace Cat_Paw_Footprint
 				options.Cookie.IsEssential = true;                // 避免被瀏覽器阻擋
 			});
 
+			builder.Services.AddScoped<IEmployeeRepository, EmployeeRepository>();
+			builder.Services.AddScoped<IEmployeeService, EmployeeService>();
+
 			builder.Services.AddControllersWithViews();
 
             var app = builder.Build();
@@ -51,7 +56,7 @@ namespace Cat_Paw_Footprint
 
             app.UseRouting();
 			app.UseSession(); // 啟用 Session 中介軟體
-
+			app.UseAuthentication();
 			app.UseAuthorization();
 			app.MapControllerRoute(
 				name: "areas",
