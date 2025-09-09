@@ -15,14 +15,24 @@ namespace Cat_Paw_Footprint
 
 			// Add services to the container.
 			builder.Services.AddDbContext<EmployeeDbContext>(options =>
-	options.UseSqlServer(builder.Configuration.GetConnectionString("EmployeeConnection")));
-			var connectionString = builder.Configuration.GetConnectionString("DefaultConnection") ?? throw new InvalidOperationException("Connection string 'DefaultConnection' not found.");
+	            options.UseSqlServer(builder.Configuration.GetConnectionString("EmployeeConnection")));
+
+			builder.Services.AddDbContext<webtravel2Context>(options =>
+	            options.UseSqlServer(builder.Configuration.GetConnectionString("EmployeeConnection")));
+
+			var connectionString = builder.Configuration.GetConnectionString("EmployeeConnection") ?? throw new InvalidOperationException("Connection string 'EmployeeConnection' not found.");
             builder.Services.AddDbContext<ApplicationDbContext>(options =>
                 options.UseSqlServer(connectionString));
             builder.Services.AddDatabaseDeveloperPageExceptionFilter();
 
-            builder.Services.AddDefaultIdentity<IdentityUser>(options => options.SignIn.RequireConfirmedAccount = true)
-                .AddEntityFrameworkStores<ApplicationDbContext>();
+			builder.Services
+				.AddIdentity<IdentityUser, IdentityRole>(opt => {
+					opt.SignIn.RequireConfirmedAccount = false; // 測試先關掉信箱驗證
+					opt.Password.RequiredLength = 6;
+				})
+				.AddEntityFrameworkStores<ApplicationDbContext>()
+				.AddDefaultTokenProviders()
+				.AddDefaultUI();
 
 			builder.Services.AddSession(options =>
 			{
@@ -36,8 +46,9 @@ namespace Cat_Paw_Footprint
 			builder.Services.AddScoped<IEmployeeService, EmployeeService>();
 
 			builder.Services.AddControllersWithViews();
+			builder.Services.AddRazorPages();
 
-            var app = builder.Build();
+			var app = builder.Build();
 
             // Configure the HTTP request pipeline.
             if (app.Environment.IsDevelopment())
@@ -56,7 +67,7 @@ namespace Cat_Paw_Footprint
 
             app.UseRouting();
 			app.UseSession(); // 啟用 Session 中介軟體
-			app.UseAuthentication();
+			app.UseAuthentication();// 在 Authorization 之前
 			app.UseAuthorization();
 			app.MapControllerRoute(
 				name: "areas",

@@ -11,6 +11,10 @@ namespace Cat_Paw_Footprint.Data
 		public DbSet<Models.Employees> Employees { get; set; }
 		public DbSet<Models.EmployeeRoles> EmployeeRoles { get; set; }
 		public DbSet<Models.EmployeeProfile> EmployeeProfile { get; set; }
+		public DbSet<Models.Customers> Customers { get; set; }
+		public DbSet<Models.CustomerProfile> CustomerProfiles { get; set; }
+		public DbSet<Models.CustomerLevels> CustomerLevels { get; set; }
+		public DbSet<Models.CustomerLoginHistory> CustomerLoginHistory { get; set; }
 		protected override void OnModelCreating(ModelBuilder modelBuilder)
 		{
 			modelBuilder.Entity<Employees>(entity =>
@@ -42,7 +46,22 @@ namespace Cat_Paw_Footprint.Data
 
 				entity.HasIndex(p => p.EmployeeID).IsUnique(); // 1 對 1 的唯一鍵
 			});
-			
+
+
+
+			modelBuilder.Entity<Customers>(entity =>
+			{
+				entity.HasKey(c => c.CustomerID);
+
+				// 跟 Identity 連動 (Customer.UserId → AspNetUsers.Id)
+				entity.HasOne(c => c.User)
+					  .WithMany() // IdentityUser 不需要知道有多少 Customer
+					  .HasForeignKey(c => c.UserId)
+					  .OnDelete(DeleteBehavior.Restrict); // 避免刪 Identity 時 Cascade 全部 Customer
+			});
+			modelBuilder.Entity<CustomerProfile>().ToTable("CustomerProfile", t => t.ExcludeFromMigrations());
+			modelBuilder.Entity<CustomerLevels>().ToTable("CustomerLevels", t => t.ExcludeFromMigrations());
+			modelBuilder.Entity<CustomerLoginHistory>().ToTable("CustomerLoginHistory", t => t.ExcludeFromMigrations());
 		}
 
 	}
