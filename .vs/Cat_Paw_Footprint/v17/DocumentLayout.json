@@ -62,8 +62,7 @@
               "RelativeToolTip": "Views\\Shared\\_Sales.cshtml",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-09-10T06:59:30.61Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-09-10T06:59:30.61Z"
             },
             {
               "$type": "Document",
@@ -73,7 +72,7 @@
               "RelativeDocumentMoniker": "Views\\Shared\\_SuperAdmin.cshtml",
               "ToolTip": "C:\\Users\\user\\Desktop\\MVC\\test\\Cat_Paw_Footprint\\Views\\Shared\\_SuperAdmin.cshtml",
               "RelativeToolTip": "Views\\Shared\\_SuperAdmin.cshtml",
-              "ViewState": "AgIAABEAAAAAAAAAAAAiwCYAAABwAAAAAAAAAA==",
+              "ViewState": "AgIAABIAAAAAAAAAAAAYwCYAAABwAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2025-09-10T06:59:11.383Z",
               "EditorCaption": ""
@@ -88,8 +87,7 @@
               "RelativeToolTip": "Areas\\Employee\\Repositories\\CustomerAdminRepository.cs",
               "ViewState": "AgIAAGEAAAAAAAAAAAAwwHUAAAAhAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-10T06:52:35.573Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-09-10T06:52:35.573Z"
             },
             {
               "$type": "Document",
@@ -113,8 +111,7 @@
               "RelativeToolTip": "Areas\\Employee\\Views\\CustomerAdmin\\CustomerList.cshtml",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAJQAAABIAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-09-10T06:19:14.64Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-09-10T06:19:14.64Z"
             },
             {
               "$type": "Document",
@@ -126,8 +123,7 @@
               "RelativeToolTip": "Areas\\Employee\\Controllers\\CustomerAdminController.cs",
               "ViewState": "AgIAAAcAAAAAAAAAAAArwBgAAAAjAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-10T06:14:17.177Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-09-10T06:14:17.177Z"
             }
           ]
         }
