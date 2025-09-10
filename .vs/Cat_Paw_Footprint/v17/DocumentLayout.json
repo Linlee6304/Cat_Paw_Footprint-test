@@ -3,20 +3,28 @@
   "WorkspaceRootPath": "C:\\Users\\user\\Desktop\\MVC\\test\\Cat_Paw_Footprint\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{EF838598-D8EA-4602-973E-B54C9768644A}|Cat_Paw_Footprint.csproj|c:\\users\\user\\desktop\\mvc\\test\\cat_paw_footprint\\areas\\productmanagement\\views\\_viewimports.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{EF838598-D8EA-4602-973E-B54C9768644A}|Cat_Paw_Footprint.csproj|solutionrelative:areas\\productmanagement\\views\\_viewimports.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{EF838598-D8EA-4602-973E-B54C9768644A}|Cat_Paw_Footprint.csproj|c:\\users\\user\\desktop\\mvc\\test\\cat_paw_footprint\\views\\shared\\_superadmin.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{EF838598-D8EA-4602-973E-B54C9768644A}|Cat_Paw_Footprint.csproj|solutionrelative:views\\shared\\_superadmin.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{EF838598-D8EA-4602-973E-B54C9768644A}|Cat_Paw_Footprint.csproj|c:\\users\\user\\desktop\\mvc\\test\\cat_paw_footprint\\areas\\productmanagement\\views\\_viewstart.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{EF838598-D8EA-4602-973E-B54C9768644A}|Cat_Paw_Footprint.csproj|solutionrelative:areas\\productmanagement\\views\\_viewstart.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{EF838598-D8EA-4602-973E-B54C9768644A}|Cat_Paw_Footprint.csproj|c:\\users\\user\\desktop\\mvc\\test\\cat_paw_footprint\\areas\\employee\\repositories\\customeradminrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EF838598-D8EA-4602-973E-B54C9768644A}|Cat_Paw_Footprint.csproj|solutionrelative:areas\\employee\\repositories\\customeradminrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{EF838598-D8EA-4602-973E-B54C9768644A}|Cat_Paw_Footprint.csproj|c:\\users\\user\\desktop\\mvc\\test\\cat_paw_footprint\\areas\\productmanagement\\controllers\\productscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{EF838598-D8EA-4602-973E-B54C9768644A}|Cat_Paw_Footprint.csproj|solutionrelative:areas\\productmanagement\\controllers\\productscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{EF838598-D8EA-4602-973E-B54C9768644A}|Cat_Paw_Footprint.csproj|c:\\users\\user\\desktop\\mvc\\test\\cat_paw_footprint\\areas\\employee\\views\\customeradmin\\customerlist.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{EF838598-D8EA-4602-973E-B54C9768644A}|Cat_Paw_Footprint.csproj|solutionrelative:areas\\employee\\views\\customeradmin\\customerlist.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{EF838598-D8EA-4602-973E-B54C9768644A}|Cat_Paw_Footprint.csproj|c:\\users\\user\\desktop\\mvc\\test\\cat_paw_footprint\\areas\\employee\\controllers\\employeeauthcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{EF838598-D8EA-4602-973E-B54C9768644A}|Cat_Paw_Footprint.csproj|solutionrelative:areas\\employee\\controllers\\employeeauthcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{EF838598-D8EA-4602-973E-B54C9768644A}|Cat_Paw_Footprint.csproj|c:\\users\\user\\desktop\\mvc\\test\\cat_paw_footprint\\areas\\employee\\controllers\\customeradmincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EF838598-D8EA-4602-973E-B54C9768644A}|Cat_Paw_Footprint.csproj|solutionrelative:areas\\employee\\controllers\\customeradmincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EF838598-D8EA-4602-973E-B54C9768644A}|Cat_Paw_Footprint.csproj|c:\\users\\user\\desktop\\mvc\\test\\cat_paw_footprint\\views\\shared\\_sales.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{EF838598-D8EA-4602-973E-B54C9768644A}|Cat_Paw_Footprint.csproj|solutionrelative:views\\shared\\_sales.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EF838598-D8EA-4602-973E-B54C9768644A}|Cat_Paw_Footprint.csproj|c:\\users\\user\\desktop\\mvc\\test\\cat_paw_footprint\\areas\\employee\\views\\employeeauth\\employeelist.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{EF838598-D8EA-4602-973E-B54C9768644A}|Cat_Paw_Footprint.csproj|solutionrelative:areas\\employee\\views\\employeeauth\\employeelist.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     }
   ],
   "DocumentGroupContainers": [
@@ -26,7 +34,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 4,
+          "SelectedChildIndex": 5,
           "Children": [
             {
               "$type": "Bookmark",
@@ -46,54 +54,79 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "_ViewImports.cshtml",
-              "DocumentMoniker": "C:\\Users\\user\\Desktop\\MVC\\test\\Cat_Paw_Footprint\\Areas\\ProductManagement\\Views\\_ViewImports.cshtml",
-              "RelativeDocumentMoniker": "Areas\\ProductManagement\\Views\\_ViewImports.cshtml",
-              "ToolTip": "C:\\Users\\user\\Desktop\\MVC\\test\\Cat_Paw_Footprint\\Areas\\ProductManagement\\Views\\_ViewImports.cshtml",
-              "RelativeToolTip": "Areas\\ProductManagement\\Views\\_ViewImports.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "DocumentIndex": 4,
+              "Title": "_Sales.cshtml",
+              "DocumentMoniker": "C:\\Users\\user\\Desktop\\MVC\\test\\Cat_Paw_Footprint\\Views\\Shared\\_Sales.cshtml",
+              "RelativeDocumentMoniker": "Views\\Shared\\_Sales.cshtml",
+              "ToolTip": "C:\\Users\\user\\Desktop\\MVC\\test\\Cat_Paw_Footprint\\Views\\Shared\\_Sales.cshtml",
+              "RelativeToolTip": "Views\\Shared\\_Sales.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-09-09T01:32:14.513Z",
+              "WhenOpened": "2025-09-10T06:59:30.61Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "_SuperAdmin.cshtml",
+              "DocumentMoniker": "C:\\Users\\user\\Desktop\\MVC\\test\\Cat_Paw_Footprint\\Views\\Shared\\_SuperAdmin.cshtml",
+              "RelativeDocumentMoniker": "Views\\Shared\\_SuperAdmin.cshtml",
+              "ToolTip": "C:\\Users\\user\\Desktop\\MVC\\test\\Cat_Paw_Footprint\\Views\\Shared\\_SuperAdmin.cshtml",
+              "RelativeToolTip": "Views\\Shared\\_SuperAdmin.cshtml",
+              "ViewState": "AgIAABEAAAAAAAAAAAAiwCYAAABwAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-09-10T06:59:11.383Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "_ViewStart.cshtml",
-              "DocumentMoniker": "C:\\Users\\user\\Desktop\\MVC\\test\\Cat_Paw_Footprint\\Areas\\ProductManagement\\Views\\_ViewStart.cshtml",
-              "RelativeDocumentMoniker": "Areas\\ProductManagement\\Views\\_ViewStart.cshtml",
-              "ToolTip": "C:\\Users\\user\\Desktop\\MVC\\test\\Cat_Paw_Footprint\\Areas\\ProductManagement\\Views\\_ViewStart.cshtml",
-              "RelativeToolTip": "Areas\\ProductManagement\\Views\\_ViewStart.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-09-09T01:32:09.608Z",
+              "Title": "CustomerAdminRepository.cs",
+              "DocumentMoniker": "C:\\Users\\user\\Desktop\\MVC\\test\\Cat_Paw_Footprint\\Areas\\Employee\\Repositories\\CustomerAdminRepository.cs",
+              "RelativeDocumentMoniker": "Areas\\Employee\\Repositories\\CustomerAdminRepository.cs",
+              "ToolTip": "C:\\Users\\user\\Desktop\\MVC\\test\\Cat_Paw_Footprint\\Areas\\Employee\\Repositories\\CustomerAdminRepository.cs",
+              "RelativeToolTip": "Areas\\Employee\\Repositories\\CustomerAdminRepository.cs",
+              "ViewState": "AgIAAGEAAAAAAAAAAAAwwHUAAAAhAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-10T06:52:35.573Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "EmployeeList.cshtml",
+              "DocumentMoniker": "C:\\Users\\user\\Desktop\\MVC\\test\\Cat_Paw_Footprint\\Areas\\Employee\\Views\\EmployeeAuth\\EmployeeList.cshtml",
+              "RelativeDocumentMoniker": "Areas\\Employee\\Views\\EmployeeAuth\\EmployeeList.cshtml",
+              "ToolTip": "C:\\Users\\user\\Desktop\\MVC\\test\\Cat_Paw_Footprint\\Areas\\Employee\\Views\\EmployeeAuth\\EmployeeList.cshtml",
+              "RelativeToolTip": "Areas\\Employee\\Views\\EmployeeAuth\\EmployeeList.cshtml",
+              "ViewState": "AgIAAFEAAAAAAAAAAAAAAFsAAAAoAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-09-10T06:29:18.733Z"
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "ProductsController.cs",
-              "DocumentMoniker": "C:\\Users\\user\\Desktop\\MVC\\test\\Cat_Paw_Footprint\\Areas\\ProductManagement\\Controllers\\ProductsController.cs",
-              "RelativeDocumentMoniker": "Areas\\ProductManagement\\Controllers\\ProductsController.cs",
-              "ToolTip": "C:\\Users\\user\\Desktop\\MVC\\test\\Cat_Paw_Footprint\\Areas\\ProductManagement\\Controllers\\ProductsController.cs",
-              "RelativeToolTip": "Areas\\ProductManagement\\Controllers\\ProductsController.cs",
-              "ViewState": "AgIAAJMAAAAAAAAAAAAywAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-09T01:31:31.222Z",
+              "Title": "CustomerList.cshtml",
+              "DocumentMoniker": "C:\\Users\\user\\Desktop\\MVC\\test\\Cat_Paw_Footprint\\Areas\\Employee\\Views\\CustomerAdmin\\CustomerList.cshtml",
+              "RelativeDocumentMoniker": "Areas\\Employee\\Views\\CustomerAdmin\\CustomerList.cshtml",
+              "ToolTip": "C:\\Users\\user\\Desktop\\MVC\\test\\Cat_Paw_Footprint\\Areas\\Employee\\Views\\CustomerAdmin\\CustomerList.cshtml",
+              "RelativeToolTip": "Areas\\Employee\\Views\\CustomerAdmin\\CustomerList.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAJQAAABIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-09-10T06:19:14.64Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 3,
-              "Title": "EmployeeAuthController.cs",
-              "DocumentMoniker": "C:\\Users\\user\\Desktop\\MVC\\test\\Cat_Paw_Footprint\\Areas\\Employee\\Controllers\\EmployeeAuthController.cs",
-              "RelativeDocumentMoniker": "Areas\\Employee\\Controllers\\EmployeeAuthController.cs",
-              "ToolTip": "C:\\Users\\user\\Desktop\\MVC\\test\\Cat_Paw_Footprint\\Areas\\Employee\\Controllers\\EmployeeAuthController.cs",
-              "RelativeToolTip": "Areas\\Employee\\Controllers\\EmployeeAuthController.cs",
-              "ViewState": "AgIAANIAAAAAAAAAAAAcwOUAAAAEAAAAAAAAAA==",
+              "Title": "CustomerAdminController.cs",
+              "DocumentMoniker": "C:\\Users\\user\\Desktop\\MVC\\test\\Cat_Paw_Footprint\\Areas\\Employee\\Controllers\\CustomerAdminController.cs",
+              "RelativeDocumentMoniker": "Areas\\Employee\\Controllers\\CustomerAdminController.cs",
+              "ToolTip": "C:\\Users\\user\\Desktop\\MVC\\test\\Cat_Paw_Footprint\\Areas\\Employee\\Controllers\\CustomerAdminController.cs",
+              "RelativeToolTip": "Areas\\Employee\\Controllers\\CustomerAdminController.cs",
+              "ViewState": "AgIAAAcAAAAAAAAAAAArwBgAAAAjAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-09T01:14:14.655Z",
+              "WhenOpened": "2025-09-10T06:14:17.177Z",
               "EditorCaption": ""
             }
           ]

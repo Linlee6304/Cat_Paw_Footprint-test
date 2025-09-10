@@ -59,6 +59,11 @@ namespace Cat_Paw_Footprint.Data
 					  .HasForeignKey(c => c.UserId)
 					  .OnDelete(DeleteBehavior.Restrict); // 避免刪 Identity 時 Cascade 全部 Customer
 			});
+			modelBuilder.Entity<Customers>()
+	   .HasOne(c => c.LevelNavigation)
+	   .WithMany(l => l.Customers)
+	   .HasForeignKey(c => c.Level)   // 指定外鍵
+	   .HasPrincipalKey(l => l.Level);// 指定主鍵
 			modelBuilder.Entity<CustomerProfile>().ToTable("CustomerProfile", t => t.ExcludeFromMigrations());
 			modelBuilder.Entity<CustomerLevels>().ToTable("CustomerLevels", t => t.ExcludeFromMigrations());
 			modelBuilder.Entity<CustomerLoginHistory>().ToTable("CustomerLoginHistory", t => t.ExcludeFromMigrations());

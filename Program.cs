@@ -44,6 +44,8 @@ namespace Cat_Paw_Footprint
 
 			builder.Services.AddScoped<IEmployeeRepository, EmployeeRepository>();
 			builder.Services.AddScoped<IEmployeeService, EmployeeService>();
+			builder.Services.AddScoped<ICustomerAdminRepository, CustomerAdminRepository>();
+			builder.Services.AddScoped<ICustomerAdminService, CustomerAdminService>();
 
 			builder.Services.AddControllersWithViews();
 			builder.Services.AddRazorPages();
