@@ -136,6 +136,22 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcRW1wbG95ZWVcVmlld3NcRW1wbG95ZWVBdXRoXF9FbXBsb3llZURldGFpbC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
+[C:/Users/user/Desktop/MVC/test/Cat_Paw_Footprint/Areas/Employee/Views/VendorAdmin/VendorList.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcRW1wbG95ZWVcVmlld3NcVmVuZG9yQWRtaW5cVmVuZG9yTGlzdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/user/Desktop/MVC/test/Cat_Paw_Footprint/Areas/Employee/Views/VendorAdmin/VendorRegister.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcRW1wbG95ZWVcVmlld3NcVmVuZG9yQWRtaW5cVmVuZG9yUmVnaXN0ZXIuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/user/Desktop/MVC/test/Cat_Paw_Footprint/Areas/Employee/Views/VendorAdmin/_LoginHistory.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcRW1wbG95ZWVcVmlld3NcVmVuZG9yQWRtaW5cX0xvZ2luSGlzdG9yeS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/user/Desktop/MVC/test/Cat_Paw_Footprint/Areas/Employee/Views/VendorAdmin/_VendorDetail.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcRW1wbG95ZWVcVmlld3NcVmVuZG9yQWRtaW5cX1ZlbmRvckRldGFpbC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/user/Desktop/MVC/test/Cat_Paw_Footprint/Areas/Employee/Views/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcRW1wbG95ZWVcVmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
