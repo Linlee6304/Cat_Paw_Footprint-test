@@ -7,7 +7,7 @@
 <h2 class="mb-4">註冊廠商帳號</h2>
 
 <!-- 顯示 ModelState 的整體錯誤 -->
-<div asp-validation-summary="All" class="alert alert-danger" role="alert"></div>
+<div asp-validation-summary="All" class="text-danger" role="alert"></div>
 
 <form asp-area="Employee" asp-controller="VendorAdmin" asp-action="VendorRegister" method="post" class="w-50 mx-auto">
     @Html.AntiForgeryToken()
@@ -17,11 +17,7 @@
         <span asp-validation-for="CompanyName" class="text-danger"></span>
     </div>
 
-    <div class="mb-3">
-        <label asp-for="Account" class="form-label"></label>
-        <input asp-for="Account" class="form-control" />
-        <span asp-validation-for="Account" class="text-danger"></span>
-    </div>
+
 
     <div class="mb-3">
         <label asp-for="Email" class="form-label"></label>

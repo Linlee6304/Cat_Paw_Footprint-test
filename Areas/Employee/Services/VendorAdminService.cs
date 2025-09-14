@@ -40,10 +40,16 @@ namespace Cat_Paw_Footprint.Areas.Employee.Services
 		{
 			using var transaction =await _context.Database.BeginTransactionAsync();//開始交易
 			try {
+
+
 				var defaultPassword = "Travel@123";
+				// 計算流水號帳號
+				var count = await _context.Vendors.CountAsync();
+				var newAccount = $"ven{(count + 1).ToString("D4")}";
+
 				var user = new IdentityUser
 				{
-					UserName = model.Account,
+					UserName = newAccount,
 					Email = model.Email
 				};
 				var result = await _userManager.CreateAsync(user, defaultPassword);
@@ -52,11 +58,14 @@ namespace Cat_Paw_Footprint.Areas.Employee.Services
 					await transaction.RollbackAsync();
 					return false;
 				}
+				// 確保角色存在
 				await _userManager.AddToRoleAsync(user, "Vendor");
+
+
 				var vendor = new Models.Vendors//建立廠商物件
 				{
 					UserId = user.Id,
-					Account = model.Account,
+					Account = newAccount,
 					CompanyName = model.CompanyName,
 					Email = model.Email,
 					Status = false,//預設停用，廠商第一次改密碼後才會順便開啟
