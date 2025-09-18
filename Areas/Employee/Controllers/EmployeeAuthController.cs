@@ -3,6 +3,7 @@ using Cat_Paw_Footprint.Areas.Employee.ViewModel;
 using Cat_Paw_Footprint.Data;
 using Cat_Paw_Footprint.Models;
 using Microsoft.AspNetCore.Authentication;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Http.HttpResults;
 using Microsoft.AspNetCore.Mvc;
@@ -13,6 +14,7 @@ using System.Security.Claims;
 namespace Cat_Paw_Footprint.Areas.Employee.Controllers
 {
 	[Area("Employee")]
+	[Authorize(AuthenticationSchemes = "EmployeeAuth", Policy = "Emp.AdminOnly")]
 	public class EmployeeAuthController: Controller//這邊搞登入與註冊功能
 	{
 		private readonly EmployeeDbContext _context;
@@ -26,6 +28,7 @@ namespace Cat_Paw_Footprint.Areas.Employee.Controllers
 		#region 登入註冊基礎功能邏輯一次放這就好不傳到Service
 		// 登入
 		[HttpGet]
+		[AllowAnonymous]
 		public IActionResult Login()
 		{
 			var model = new LoginViewModel(); // ✅ 傳入空模型
@@ -33,6 +36,7 @@ namespace Cat_Paw_Footprint.Areas.Employee.Controllers
 		}
 		// 登入
 		[HttpPost]
+		[AllowAnonymous]
 		[ValidateAntiForgeryToken]
 		public async Task<IActionResult> Login([Bind("Account,Password")] LoginViewModel vm)
 		
@@ -162,6 +166,7 @@ namespace Cat_Paw_Footprint.Areas.Employee.Controllers
 		// 登出
 		[HttpPost]
 		[ValidateAntiForgeryToken]
+		[AllowAnonymous]
 		public async Task<IActionResult> Logout()
 		{
 			// 1) 清 Session
@@ -176,7 +181,7 @@ namespace Cat_Paw_Footprint.Areas.Employee.Controllers
 			Response.Cookies.Delete(".CatPaw.Auth");
 
 			// 4) 回登入頁
-			return RedirectToAction("Index", "Home", new { area = "" });
+			return RedirectToAction("Login", "EmployeeAuth", new { area = "Employee" });
 		}
 		#endregion
 		#region 這邊開始用service
@@ -248,6 +253,7 @@ namespace Cat_Paw_Footprint.Areas.Employee.Controllers
 		}
 
 		[HttpGet]
+		[AllowAnonymous]
 		public async Task<IActionResult> Profile()
 		{
 			var idStr = HttpContext.Session.GetString("EmpId");
@@ -272,6 +278,7 @@ namespace Cat_Paw_Footprint.Areas.Employee.Controllers
 		}
 
 		[HttpPost]//單獨帳號個人資料頁更新
+		[AllowAnonymous]
 		[ValidateAntiForgeryToken]
 		public async Task<IActionResult> Profile(ProfileEditInput input)
 		{
