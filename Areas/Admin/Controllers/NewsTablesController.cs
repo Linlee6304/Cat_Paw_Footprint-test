@@ -70,7 +70,7 @@ namespace Cat_Paw_Footprint.Areas.Admin.Controllers
                 NewsContent = newsTable.NewsContent,
                 PublishTime = newsTable.PublishTime,
                 ExpireTime = newsTable.ExpireTime,
-                IsActive = newsTable.IsActive?? false, // 確保不是 null
+                IsActive = newsTable.IsActive, // 確保不是 null
                 CreateTime = newsTable.CreateTime,
                 UpdateTime = newsTable.UpdateTime,
                 EmployeeName = newsTable.Employee?.EmployeeName
@@ -82,8 +82,25 @@ namespace Cat_Paw_Footprint.Areas.Admin.Controllers
         // GET: Admin/NewsTables/Create
         public IActionResult Create()
         {
-            ViewData["EmployeeID"] = new SelectList(_context.EmployeeProfile, "EmployeeID", "EmployeeID");
-            return View();
+			// 1. 取出登入者 ID (從 Session)
+			var currentEmpId = int.Parse(HttpContext.Session.GetString("EmpId"));
+
+			// 2. 撈取姓名
+			var employee = _context.EmployeeProfile
+				.FirstOrDefault(e => e.EmployeeID == currentEmpId);
+
+			// 3. 建立 ViewModel，預設帶入姓名與 ID
+			var vm = new NewsCreateViewModel
+			{
+				EmployeeID = currentEmpId,
+				EmployeeName = employee?.EmployeeName
+			};
+
+			return View(vm);
+
+
+			//ViewData["EmployeeID"] = new SelectList(_context.EmployeeProfile, "EmployeeID", "EmployeeName");//下拉式選單
+
         }
 
         // POST: Admin/NewsTables/Create
@@ -91,52 +108,87 @@ namespace Cat_Paw_Footprint.Areas.Admin.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create([Bind("NewsID,NewsTitle,NewsContent,PublishTime,ExpireTime,IsActive,CreateTime,UpdateTime,EmployeeID")] NewsTable newsTable)
+        public async Task<IActionResult> Create(NewsCreateViewModel model)
         {
-            if (ModelState.IsValid)
-            {
-                _context.Add(newsTable);
-                await _context.SaveChangesAsync();
-                return RedirectToAction(nameof(Index));
-            }
-            ViewData["EmployeeID"] = new SelectList(_context.EmployeeProfile, "EmployeeID", "EmployeeID", newsTable.EmployeeID);
-            return View(newsTable);
-        }
+
+		
+
+			if (ModelState.IsValid)
+			{
+				var currentEmpId = int.Parse(HttpContext.Session.GetString("EmpId"));
+
+				var entity = new NewsTable
+				{
+					NewsTitle = model.NewsTitle,
+					NewsContent = model.NewsContent,
+					IsActive = model.IsActive,
+					PublishTime = model.PublishTime,
+					ExpireTime = model.ExpireTime,
+					CreateTime = DateTime.Now,
+					UpdateTime = DateTime.Now,
+					EmployeeID = currentEmpId,
+				};
+
+				_context.Add(entity);
+				await _context.SaveChangesAsync();
+				return RedirectToAction(nameof(Index));
+			}
+
+			// ❗ 除錯：把所有錯誤列出來
+			if (!ModelState.IsValid)
+			{
+				var errors = ModelState.Values
+									   .SelectMany(v => v.Errors)
+									   .Select(e => e.ErrorMessage);
+
+				foreach (var err in errors)
+				{
+					Console.WriteLine("驗證錯誤：" + err);
+				}
+			}
+
+			ViewData["EmployeeID"] = new SelectList(_context.EmployeeProfile, "EmployeeID", "EmployeeName", model.EmployeeID);
+			return View(model);
+		}
 
         // GET: Admin/NewsTables/Edit/5
         public async Task<IActionResult> Edit(int? id)
         {
-            if (id == null)
+			
+			if (id == null)
             {
                 return NotFound();
             }
 
-            var newsTable = await _context.NewsTable.FindAsync(id);
-            if (newsTable == null)
+			var newsTable = await _context.NewsTable
+		    .Include(n => n.Employee) // 確保可以讀到 EmployeeName
+		    .FirstOrDefaultAsync(n => n.NewsID == id);
+
+			if (newsTable == null)
             {
                 return NotFound();
             }
 
-            // 映射成 ViewModel
-            var viewModel = new NewsEditViewModel
+			// 映射成 ViewModel
+			var viewModel = new NewsEditViewModel
             {
                 NewsID = newsTable.NewsID,
                 NewsTitle = newsTable.NewsTitle,
                 NewsContent = newsTable.NewsContent,
                 PublishTime = newsTable.PublishTime,
                 ExpireTime = newsTable.ExpireTime,
-                IsActive = newsTable.IsActive?? false, // 確保不是 null
+                IsActive = newsTable.IsActive,
                 EmployeeID = newsTable.EmployeeID,
                 EmployeeName = newsTable.Employee?.EmployeeName,
             };
 
-            // 下拉選單 (員工清單)
-            ViewData["EmployeeID"] = new SelectList(
-                _context.EmployeeProfile,
-                "EmployeeID",
-                "EmployeeName", // 如果你有姓名欄位可以顯示
-                newsTable.EmployeeID
-            );
+            //// 下拉選單 (員工清單)
+            //ViewData["EmployeeID"] = new SelectList(
+            //    _context.EmployeeProfile,
+            //    "EmployeeID",
+            //    "EmployeeName", // 如果你有姓名欄位可以顯示
+            //    newsTable.EmployeeID
+            //);
 
             return View(viewModel);
         }
@@ -148,94 +200,115 @@ namespace Cat_Paw_Footprint.Areas.Admin.Controllers
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> Edit(int id, NewsEditViewModel viewModel)
         {
-            if (id != viewModel.NewsID)
-            {
-                return NotFound();
-            }
+			if (id != viewModel.NewsID)
+			{
+				return NotFound();
+			}
 
-            if (ModelState.IsValid)
-            {
-                try
-                {
-                    // 找到要更新的資料
-                    var newsTable = await _context.NewsTable.FindAsync(id);
-                    if (newsTable == null)
-                    {
-                        return NotFound();
-                    }
+			if (ModelState.IsValid)
+			{
+				try
+				{
+					// 找到要更新的資料
+					var newsTable = await _context.NewsTable.FindAsync(id);
+					if (newsTable == null)
+					{
+						return NotFound();
+					}
 
-                    // 將 ViewModel 的資料更新回 Entity
-                    newsTable.NewsTitle = viewModel.NewsTitle;
-                    newsTable.NewsContent = viewModel.NewsContent;
-                    newsTable.PublishTime = viewModel.PublishTime;
-                    newsTable.ExpireTime = viewModel.ExpireTime;
-                    newsTable.IsActive = viewModel.IsActive;
-                    newsTable.UpdateTime = DateTime.Now; // 通常編輯會更新 UpdateTime
-                    newsTable.EmployeeID = viewModel.EmployeeID;
+					// 取得目前登入的員工 ID
+					var empIdStr = HttpContext.Session.GetString("EmpId");
+					if (string.IsNullOrEmpty(empIdStr)) return Unauthorized();
+					var currentEmpId = int.Parse(empIdStr);
 
-                    _context.Update(newsTable);
-                    await _context.SaveChangesAsync();
-                }
-                catch (DbUpdateConcurrencyException)
-                {
-                    if (!_context.NewsTable.Any(e => e.NewsID == viewModel.NewsID))
-                    {
-                        return NotFound();
-                    }
-                    else
-                    {
-                        throw;
-                    }
-                }
-                return RedirectToAction(nameof(Index));
-            }
+					// 將 ViewModel 的資料更新回 Entity
+					newsTable.NewsTitle = viewModel.NewsTitle;
+					newsTable.NewsContent = viewModel.NewsContent;
+					newsTable.PublishTime = viewModel.PublishTime;
+					newsTable.ExpireTime = viewModel.ExpireTime;
+					newsTable.IsActive = viewModel.IsActive;
+					newsTable.UpdateTime = DateTime.Now;
 
-            // 如果 ModelState 驗證失敗，要重建下拉選單
-            ViewData["EmployeeID"] = new SelectList(
-                _context.EmployeeProfile,
-                "EmployeeID",
-                "EmployeeName",
-                viewModel.EmployeeID
-            );
+					// 覆蓋成目前登入的員工
+					newsTable.EmployeeID = currentEmpId;
 
-            return View(viewModel);
-        }
+					_context.Update(newsTable);
+					await _context.SaveChangesAsync();
+				}
+				catch (DbUpdateConcurrencyException)
+				{
+					if (!_context.NewsTable.Any(e => e.NewsID == viewModel.NewsID))
+					{
+						return NotFound();
+					}
+					else
+					{
+						throw;
+					}
+				}
+				return RedirectToAction(nameof(Index));
+			}
+
+			// ModelState 驗證失敗時，只回傳 ViewModel（不需要員工下拉選單了）
+			return View(viewModel);
+
+			//// 如果 ModelState 驗證失敗，要重建下拉選單
+			//ViewData["EmployeeID"] = new SelectList(
+			//    _context.EmployeeProfile,
+			//    "EmployeeID",
+			//    "EmployeeName",
+			//    viewModel.EmployeeID
+			//);
+		}
 
         // GET: Admin/NewsTables/Delete/5
         public async Task<IActionResult> Delete(int? id)
         {
-            if (id == null)
-            {
-                return NotFound();
-            }
+			if (id == null)
+			{
+				return NotFound();
+			}
 
-            var newsTable = await _context.NewsTable
-                .Include(n => n.Employee)
-                .FirstOrDefaultAsync(m => m.NewsID == id);
-            if (newsTable == null)
-            {
-                return NotFound();
-            }
+			var newsTable = await _context.NewsTable
+				.Include(n => n.Employee)
+				.FirstOrDefaultAsync(m => m.NewsID == id);
 
-            return View(newsTable);
-        }
+			if (newsTable == null)
+			{
+				return NotFound();
+			}
+
+			var vm = new NewsDeleteViewModel
+			{
+				NewsID = newsTable.NewsID,
+				NewsTitle = newsTable.NewsTitle,
+				NewsContent = newsTable.NewsContent,
+				IsActive = newsTable.IsActive,
+				PublishTime = newsTable.PublishTime,
+				ExpireTime = newsTable.ExpireTime,
+				CreateTime = newsTable.CreateTime,
+				UpdateTime = newsTable.UpdateTime,
+				EmployeeName = newsTable.Employee?.EmployeeName // 注意要防止 null
+			};
+
+			return View(vm);
+		}
 
         // POST: Admin/NewsTables/Delete/5
         [HttpPost, ActionName("Delete")]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> DeleteConfirmed(int id)
-        {
-            var newsTable = await _context.NewsTable.FindAsync(id);
-            if (newsTable != null)
-            {
-                _context.NewsTable.Remove(newsTable);
-            }
+		public async Task<IActionResult> DeleteConfirmed(NewsDeleteViewModel model)
+		{
+			var newsTable = await _context.NewsTable.FindAsync(model.NewsID);
+			if (newsTable != null)
+			{
+				_context.NewsTable.Remove(newsTable);
+				await _context.SaveChangesAsync();
+			}
+			return RedirectToAction(nameof(Index));
+		}
 
-            await _context.SaveChangesAsync();
-            return RedirectToAction(nameof(Index));
-        }
-
-        private bool NewsTableExists(int id)
+		private bool NewsTableExists(int id)
         {
             return _context.NewsTable.Any(e => e.NewsID == id);
         }

@@ -1,3 +1,5 @@
+using Cat_Paw_Footprint.Areas.CustomerService.Repositories;
+using Cat_Paw_Footprint.Areas.CustomerService.Services;
 using Cat_Paw_Footprint.Areas.Employee.Repositories;
 using Cat_Paw_Footprint.Areas.Employee.Services;
 using Cat_Paw_Footprint.Areas.Vendor.Repositories;
@@ -6,6 +8,8 @@ using Cat_Paw_Footprint.Data;
 using Cat_Paw_Footprint.Models;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
+using Cat_Paw_Footprint.Areas.Order.Models;
+using Cat_Paw_Footprint.Areas.Order.Services;
 
 namespace Cat_Paw_Footprint
 {
@@ -57,7 +61,6 @@ namespace Cat_Paw_Footprint
 		options.LoginPath = "/Employee/Auth/Login";       // 員工登入頁
 		options.AccessDeniedPath = "/Employee/Auth/Denied";
 	});
-			;
 
 			builder.Services.AddSession(options =>
 			{
@@ -75,6 +78,14 @@ namespace Cat_Paw_Footprint
 			builder.Services.AddScoped<IVendorAdminService, VendorAdminService>();
 			builder.Services.AddScoped<IVendorHomeRepository, VendorHomeRepository>();
 			builder.Services.AddScoped<IVendorHomeService, VendorHomeService>();
+			builder.Services.AddScoped<IFAQService, FAQService>();
+			builder.Services.AddScoped<IFAQRepository, FAQRepository>();
+			builder.Services.AddScoped<ICustomerSupportTicketsRepository, CustomerSupportTicketsRepository>();
+			builder.Services.AddScoped<ICustomerSupportTicketsService, CustomerSupportTicketsService>();
+			builder.Services.AddScoped<ICustomerSupportTicketsRepository, CustomerSupportTicketsRepository>();
+			builder.Services.AddScoped<ICustomerSupportTicketsService, CustomerSupportTicketsService>();
+			builder.Services.AddScoped<ICustomerSupportFeedbackService, CustomerSupportFeedbackService>();
+			builder.Services.AddScoped<ICustomerSupportFeedbackRepository, CustomerSupportFeedbackRepository>();
 
 			builder.Services.AddHttpContextAccessor();
 
@@ -125,8 +136,6 @@ namespace Cat_Paw_Footprint
 
 				await next();
 			});
-
-
 			app.UseAuthentication();// 在 Authorization 之前
 			app.UseAuthorization();
 			app.MapControllerRoute(
@@ -138,6 +147,8 @@ namespace Cat_Paw_Footprint
             app.MapRazorPages();
 
             app.Run();
-        }
+			builder.Services.Configure<SmtpOptions>(builder.Configuration.GetSection("Smtp"));
+			builder.Services.AddTransient<IEmailSender, EmailSender>();
+		}
     }
 }

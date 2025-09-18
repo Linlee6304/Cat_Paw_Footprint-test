@@ -3,7 +3,8 @@ using System.ComponentModel.DataAnnotations;
 
 namespace Cat_Paw_Footprint.Areas.Admin.ViewModel
 {
-    public class NewsIndexViewModel
+	
+	public class NewsIndexViewModel
     {
        
         public int NewsID { get; set; }
@@ -15,7 +16,7 @@ namespace Cat_Paw_Footprint.Areas.Admin.ViewModel
         [Display(Name = "到期時間")]
         public DateTime? ExpireTime { get; set; }
 
-        [Display(Name = "是否啟用")]
+        [Display(Name = "啟用")]
         public bool? IsActive { get; set; }
 
         [Display(Name = "更新時間")]

@@ -16,7 +16,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Cat_Paw_Footprint")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+28df09161b51ad3ff0c384a54311a17302f8e109")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+bd5838ea4abf2453cb9f56b3e0c66129af3cccdd")]
 [assembly: System.Reflection.AssemblyProductAttribute("Cat_Paw_Footprint")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Cat_Paw_Footprint")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
